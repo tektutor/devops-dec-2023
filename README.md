@@ -1,4 +1,4 @@
-## Kindly complete your pre-test from you RPS Lab machine
+## Kindly complete your pre-test from your RPS Lab machine
 https://app.mymapit.in/code4/tiny/Dm7Lz1
 
 RPS Cloud Login you would received via email, which looks like 23MAN3489_UXX
