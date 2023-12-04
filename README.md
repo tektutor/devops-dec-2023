@@ -12,3 +12,5 @@ Login credentials for your RPS CentOS Lab machine
 username - rps
 password - rps@12345
 </pre>
+
+Once you all complete the test, leave a confirmation message so that we can start the training.
