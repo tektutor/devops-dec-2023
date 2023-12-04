@@ -16,3 +16,25 @@ Java version: 17.0.9-ea, vendor: Debian, runtime: /usr/lib/jvm/java-17-openjdk-a
 Default locale: en_US, platform encoding: UTF-8
 OS name: "linux", version: "6.4.0-kali3-amd64", arch: "amd64", family: "unix"  
 </pre>
+
+## What is Agile?
+- Fail-fast
+- 
+
+## SCRUM
+- Daily stand-up meeting
+  - What is the purpose of this meeting?
+    - Discuss road-blocks, impediments
+    - share updates
+    - 
+
+## SCRUM vs Waterfall
+
+
+## What is DevOps?
+
+## What is Continuous Integration (CI)?
+
+## What is Continuous Deployment (CD)?
+
+## What is Continuous Delivery (CD)?
