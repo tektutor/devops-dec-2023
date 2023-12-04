@@ -5,7 +5,7 @@ RPS Cloud Login you would received via email, which looks like 23MAN3489_UXX
 <pre>
 Password is Password@1
 </pre>
-Yoou may be prompted to change the password, you may change the password to rps@12345 as it would be convenient to use a common password while troubleshooting during the training.
+You may be prompted to change the password, you may change the password to rps@12345 as it would be convenient to use a common password while troubleshooting during the training.
 
 Login credentials for your RPS CentOS Lab machine
 <pre>
