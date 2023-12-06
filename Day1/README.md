@@ -542,8 +542,20 @@ If you are able to see your jar and poms deployed onto JFrog Artifactory server,
 - this file has all the default global configuration like maven central repo url, plugin repo url, life-cycle phase and its respective plugin configurations
 
 ## Info - What is Parent POM?
-- this
+- this is the top level pom file we manually create
+- this parent pom will have the name of the parent module defined in terms of maven co-ordinates
+- will have common dependencies and configurations which will be inherited by all child modules
+- the parent pom packaging must be marked as pom as they are not allowed to have source code
+- the parent module will have one or more module element for each child module
 
+## Info - What is Child POM?
+- every child module in a multi module project will have pom.xml under the child module folder which is referred as the Child POM
+- Child modules can optionally have source code, ie. this also could be parent some other child modules
+
+## Info - What is Effective POM?
+- Effective POM is the combination of properties, configurations inherited by Parent POM from the Super POM
+- Effective POM from the point of child pom would have inherited everything from its immediate parent
+- this is how, maven learns learns all the required properties to build a maven project
 ## Lab - Printing the effective pom for CRM parent module
 ```
 cd ~/devops-dec-2023
