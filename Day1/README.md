@@ -534,3 +534,27 @@ Now let us again check the JFrog Artifactory deployment url to notice the jar an
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/aa20edb8-e034-417e-94a1-fd0330b81c6e)
 
 If you are able to see your jar and poms deployed onto JFrog Artifactory server, you have successfuly deployed !
+
+
+## Info - What is Super POM?
+- this comes with Maven installation
+- you can find this Super POM inside maven-installation-folder/lib/maven-model-xxxx.jar
+- this file has all the default global configuration like maven central repo url, plugin repo url, life-cycle phase and its respective plugin configurations
+
+## Info - What is Parent POM?
+- this
+
+## Lab - Printing the effective pom for CRM parent module
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/multi-module-project
+mvn help:effective-pom
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/babf2b10-5452-4936-8dcd-285374f92e0e)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/af57bb32-c504-47bb-bc7f-b7a8a87955a3)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/876a164f-12c9-4c10-b75d-5e91afb4e9ba)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/0b252fa5-a85f-4f0c-943d-e07bc22b9302)
+
