@@ -366,6 +366,21 @@ docker ps
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5a1ae248-81fa-4127-8bb3-3748c7ef3c53)
 
+Accessing the JFrog Artifactory from your RPS CentOS machine Web browser
+```
+http://localhost:8081
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/70fb7d71-be2e-4be8-99da-314b09b946de)
+
+The default JFrog Artifactory server login credentials are
+<pre>
+username - admin
+password - password
+</pre>
+When it prompts for changing the password, change it rps@12345
+
 ## Lab - Deploying application packaged jar files into JFrog Artifactory server
 ```
 ```
