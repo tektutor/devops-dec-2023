@@ -1,4 +1,4 @@
-# Day1
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/2f49f32c-99b3-484f-afab-7d96b0293259)# Day1
 
 ## Checking the maven version on your RPS Lab machine
 ```
@@ -422,7 +422,11 @@ You may close the window without creating users.
 On the top Left, switch from "Administration" tab to "Application" tab
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d7baad06-746d-4450-9275-845e9106e68e)
 
+On the top left, click on "Artifactory" and "Artifacts" under that
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/4174240e-4e93-4c5f-bf9c-6e1b278e853f)
 
+The url shown below is the URL we could use to deploy our application artifacts
+http://localhost:8082/artifactory/tektutor/
 
 ## Lab - Deploying application packaged jar files into JFrog Artifactory server
 ```
