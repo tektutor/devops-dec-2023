@@ -279,3 +279,15 @@ mvn help:describe -Dcmd=clean
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/fa541d40-b6d5-4b74-883e-5538785a4f6c)
+
+
+## Lab - Listing the site life-cycle phases
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn help:describe -Dcmd=site
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/442cc708-4806-4505-9448-354842c97641)
