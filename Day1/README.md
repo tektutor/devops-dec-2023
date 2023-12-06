@@ -420,7 +420,8 @@ You may close the window without creating users.
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b01110bc-bd21-4da5-91e1-530eadcd873f)
 
 On the top Left, switch from "Administration" tab to "Application" tab
-![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5f491795-ba0f-4fe9-9202-95aeda6d9ac4)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d7baad06-746d-4450-9275-845e9106e68e)
+
 
 
 ## Lab - Deploying application packaged jar files into JFrog Artifactory server
