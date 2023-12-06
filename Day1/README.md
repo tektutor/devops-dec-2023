@@ -113,3 +113,23 @@ OS name: "linux", version: "6.4.0-kali3-amd64", arch: "amd64", family: "unix"
     1. Local ( user home .m2 folder )
     2. Private ( has proprietary lib/framework jar and opensource lib/framework jars and plugins )
     3. Central Repository ( Web site that has all open sources lib/framework jars and plugins )
+
+## What are Maven co-ordinates
+- Maven has conventions for even on how we should name our projects
+- the combination of all the 3 co-ordinates are supposed to unique
+- Maven uses following 3 co-ordinates
+  1. GroupId
+  2. ArtifactId
+  3. Version
+ 
+- GroupId
+  - your organization's reverse domain name ( Eg: tektutor.org is my startup domain name, reverse domain would be org.tektutor )
+  - string
+- ArtifactId
+  - is the name of the packaged application binary
+  - i.e. name of the jar/war/ear/zip etc.,
+- Version
+  - x.y.z
+    - x - represents major version
+    - y - represents minor version
+    - z - represents incremental version
