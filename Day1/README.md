@@ -402,6 +402,8 @@ Click on "Skip" button
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/363dbbbf-eb61-4e53-896d-45fe52d91b01)
 Click on "Finish" button
 
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/307675f2-6e7d-4c7f-821b-62efef29ff30)
+
 
 ## Lab - Deploying application packaged jar files into JFrog Artifactory server
 ```
