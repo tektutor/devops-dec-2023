@@ -472,3 +472,17 @@ This is because, we are yet to configure the JFrog Artifactory URL in the pom.xm
 
 Hence we need to configure the pom.xml as shown below
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8a91e42c-3c45-4fb1-91d6-bfe78edfa754)
+
+Let's attempt to deploy the jar file as we are done with the pom.xml configuration
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn deploy
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/0512a387-1ae8-49cf-acb1-94f7cf776097)
+
+The above is due to the unauthorized login, i.e we need to configure maven settings.xml file with the JFrog Artifactory login credentials, so that maven can login into the JFrog Artifactory server and then can successfully deploy the application jar and poms respectively.
+
