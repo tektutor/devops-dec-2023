@@ -319,3 +319,39 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a20bfc2e-5019-4ac5-bf05-ffdcfc3fd393)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3411b6cf-b3b7-4b1c-a86b-3761adf2081d)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e21ed833-be6d-41c6-8fde-5d59bfe871f2)
+
+## Lab - Integrating JUnit automated test cases as part of maven build
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+cat pom.xml
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/937f790c-6ed7-48b1-a5f3-59ba62f44340)
+In the above screenshot, you can notice we added junit dependency so that Maven will download the junit testing framework jar file from Maven Central repository and cache in the Maven local repository.
+
+Also notice, we added JUnit test case as shown below
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+cat src/test/org/tektutor/HelloTest.java
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/26b837d4-7cbd-4cd2-8535-cc4f43223e08)
+
+We can now compile and execute the test cases as part of Maven build with the below commands
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn test
+```
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ce5d88cd-918f-4918-99c1-5d32f76363ba)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c4a12dae-af31-4e04-bf9a-0e9d253a7f4d)
+
+In the above screenshot, you can notice the maven build executed one test case as part of the build.  In case any one of the testcases or multiple test cases fail, the build will also fail.  The build will succeed, only if all the test cases passes.
