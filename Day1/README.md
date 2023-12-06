@@ -134,7 +134,18 @@ OS name: "linux", version: "6.4.0-kali3-amd64", arch: "amd64", family: "unix"
     - y - represents minor version
     - z - represents incremental version
 
+## Info - Maven Convention over Configuration
+- this is based 80-20 Principle
+- as per 80-20 Principle, they say if you consider any product, 80% of the times we use only 20% of the features of any product
+- those 20% of the features which are commonly used shall be identified and it should be implemented in such a way it is easy to use
+- most features which are rarely also must be supported, but it is ok if it requires hopping between multiple menu pages to reach out to the advanced features. As these advanced features are generally used by Expert users, that too rarely.
+- 80% of the times, maven build tool will be used by Java based projects
+- In some rare cases, maven build tool could also be used to build C++/C# projects, maven also supports such use-cases
+- But using maven to build C++/C# projects are rare, we may have to configure maven as those projects may or may not follow all the Maven conventions
+- If we follow Maven conventions, then we need to do little to no configurations, if we can't follow maven conventions, then we need to do more configurations
+
 ## Lab - Installing tree utility
+When the below prompts for password type 'rps@12345' as the password without quotes.
 ```
 sudo yum install -y tree
 ```
@@ -182,3 +193,165 @@ java org.tektutor.Hello
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/18e4745a-b3a7-4537-9e61-350e989356d7)
 
+Deleting the target folder
+```
+cd ~/devops-dec-2023/Day1/hello
+tree target
+mvn clean
+tree target
+```
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/19a0b4e7-ffea-430e-87cd-031956d52920)
+
+## Info - What are Maven Plugins?
+- Maven Plugins are jar files that are downloaded by Maven build tool on demand from Maven Central Repository website
+- Maven Plugins are used by Maven build tool
+- For every functionality, Maven build tool depends on specific plugins
+- For example:
+  - To compile maven project, maven depends on maven-compiler-plugin
+  - To delete target folder, maven depends on maven-clean-plugin
+  - To package application binaries as jar file, maven depends on maven-jar-plugin
+  - To deploy application jar into jfrog artifactory or sonatype nexus, maven depends on maven-deploy-plugin
+  
+- Each Maven Plugin has one or more goals
+- Each goal supports one functionality
+- For example - maven-compiler-plugin supports 3 goals
+  1. compile
+  2. testCompile
+  3. help
+
+## Lab - Finding maven-compiler-plugin goals
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn help:describe -Dplugin=org.apache.maven.plugins:maven-compiler-plugin:3.11.0
+```
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/6785cd07-1106-44a9-9691-3c1d6b3437d0)
+
+
+## Info - Maven Life cycle
+
+Life cycle is a combination many Maven Phases, each Maven Phase invokes one or more Maven Plugins, each Plugin has one more goals.
+
+Maven life-cycle is a sequence of many maven phases executed from top to bottom order. For those phases some plugins are configured, the respective plugin goals will be invoked.
+
+Maven supports 3 types of Life cycle
+1. default
+2. clean
+3. site 
+
+## Lab - Listing Maven default life-cycle phases
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn help:describe -Dcmd=compile
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/42e6b16d-3916-40a8-b9a3-5d1f9e6ed236)
+
+## Lab - How maven uses the Maven co-ordinates to maintain the plugins and dependencies within maven local repository folder
+Maven co-ordinates for maven-compiler-plugin is
+<pre>
+groupId - org.apache.maven.plugins
+artifactId - jar name
+version - 3.11.0
+</pre>
+
+The above maven co-ordinates of maven-compiler-plugin will be used as a directory structure within maven local repository folder as shown below
+```
+cd ~/.m2/repository
+# the below folder is formed using groupId
+cd org/apache/maven/plugins
+
+## the below folder is formed using artifactId
+cd maven-compiler-plugin
+
+# the below folder is formed using version
+cd 3.11.0
+
+# you will be able to locate the maven-compiler-plugin jar and its pom in this directory
+ls -l
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/46a324e0-5b36-49e9-8b4f-f7207871bf67)
+
+
+## Lab - Listing the clean life-cycle phases
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn help:describe -Dcmd=clean
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/fa541d40-b6d5-4b74-883e-5538785a4f6c)
+
+
+## Lab - Listing the site life-cycle phases
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn help:describe -Dcmd=site
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/442cc708-4806-4505-9448-354842c97641)
+
+## Lab - Understanding the use of mvn site command
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn site
+```
+
+The above maven command will generate html documentation based on the pom.xml. This documentation web pages can be accessed using web browsers by the team members to understanding the plugins and dependent libraries. 
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1a25bdad-6462-4a2d-a8f1-b52ebcdcb79d)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a20bfc2e-5019-4ac5-bf05-ffdcfc3fd393)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3411b6cf-b3b7-4b1c-a86b-3761adf2081d)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e21ed833-be6d-41c6-8fde-5d59bfe871f2)
+
+## Lab - Integrating JUnit automated test cases as part of maven build
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+cat pom.xml
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/937f790c-6ed7-48b1-a5f3-59ba62f44340)
+In the above screenshot, you can notice we added junit dependency so that Maven will download the junit testing framework jar file from Maven Central repository and cache in the Maven local repository.
+
+Also notice, we added JUnit test case as shown below
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+cat src/test/org/tektutor/HelloTest.java
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/26b837d4-7cbd-4cd2-8535-cc4f43223e08)
+
+We can now compile and execute the test cases as part of Maven build with the below commands
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn test
+```
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ce5d88cd-918f-4918-99c1-5d32f76363ba)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c4a12dae-af31-4e04-bf9a-0e9d253a7f4d)
+
+In the above screenshot, you can notice the maven build executed one test case as part of the build.  In case any one of the testcases or multiple test cases fail, the build will also fail.  The build will succeed, only if all the test cases passes.
