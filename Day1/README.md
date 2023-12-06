@@ -86,5 +86,6 @@ OS name: "linux", version: "6.4.0-kali3-amd64", arch: "amd64", family: "unix"
      - BDD Frameworks
      - they also need learn little bit of administration skills ( Ansible, Puppet, Chef, Salt/Saltstack )
   - Operations Team
-    
+    - need to learn infrastructure automation tools to provision machines locally or on cloud
+    - need to learn configuration management tools to automate software installations & configurations
   
