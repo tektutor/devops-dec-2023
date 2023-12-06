@@ -195,6 +195,14 @@ Expected output
 
 ## Info - What are Maven Plugins?
 - Maven Plugins are jar files that are downloaded by Maven build tool on demand from Maven Central Repository website
+- Maven Plugins are used by Maven build tool
+- For every functionality, Maven build tool depends on specific plugins
+- For example:
+  - To compile maven project, maven depends on maven-compiler-plugin
+  - To delete target folder, maven depends on maven-clean-plugin
+  - To package application binaries as jar file, maven depends on maven-jar-plugin
+  - To deploy application jar into jfrog artifactory or sonatype nexus, maven depends on maven-deploy-plugin
+  
 - Each Maven Plugin has one or more goals
 - Each goal supports one functionality
 - For example - maven-compiler-plugin supports 3 goals
