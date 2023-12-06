@@ -511,3 +511,16 @@ Copy the lines between line numbers 120 to 124 from the commented section and pa
 Now edit the lines 113 thru 116 as shown below
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/02213e07-5f55-4355-a1bf-7afb84732fcc)
 Save the changes and close gedit editor.
+
+Now you may try to deploy as shown below
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn deploy
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c4ade022-c030-43b8-8f57-3932fe9856fd)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/784b7de9-b9f2-4a80-bb4d-5b3db9fc7437)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/54cb3e19-219c-4c82-9a68-b9483f1fd348)
