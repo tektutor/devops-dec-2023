@@ -135,6 +135,7 @@ OS name: "linux", version: "6.4.0-kali3-amd64", arch: "amd64", family: "unix"
     - z - represents incremental version
 
 ## Lab - Installing tree utility
+When the below prompts for password type 'rps@12345' as the password without quotes.
 ```
 sudo yum install -y tree
 ```
@@ -182,3 +183,7 @@ java org.tektutor.Hello
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/18e4745a-b3a7-4537-9e61-350e989356d7)
 
+Deleting the target folder
+```
+
+```
