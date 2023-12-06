@@ -185,5 +185,10 @@ Expected output
 
 Deleting the target folder
 ```
-
+cd ~/devops-dec-2023/Day1/hello
+tree target
+mvn clean
+tree target
 ```
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/19a0b4e7-ffea-430e-87cd-031956d52920)
