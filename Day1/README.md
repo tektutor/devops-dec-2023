@@ -355,3 +355,17 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c4a12dae-af31-4e04-bf9a-0e9d253a7f4d)
 
 In the above screenshot, you can notice the maven build executed one test case as part of the build.  In case any one of the testcases or multiple test cases fail, the build will also fail.  The build will succeed, only if all the test cases passes.
+
+## Lab - Launching JFrog Artifactory server as a Docker container
+```
+cd ~
+docker run -d --name jfrog --hostname jfrog -p 8081-8082:8081-8082  releases-docker.jfrog.io/jfrog/artifactory-oss:latest
+docker ps
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5a1ae248-81fa-4127-8bb3-3748c7ef3c53)
+
+## Lab - Deploying application packaged jar files into JFrog Artifactory server
+```
+```
