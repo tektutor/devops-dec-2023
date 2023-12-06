@@ -486,3 +486,27 @@ Expected output
 
 The above is due to the unauthorized login, i.e we need to configure maven settings.xml file with the JFrog Artifactory login credentials, so that maven can login into the JFrog Artifactory server and then can successfully deploy the application jar and poms respectively.
 
+Finding your maven installation path
+```
+mvn --version
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5e4f1dcc-1e59-42ed-b159-ba1f1166d116)
+
+We can now edit the settings.xml file at the below path
+
+gedit /home/jegan/Downloads/apache-maven-3.9.6/conf/settings.xml
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3d4c4a49-40c9-4ee6-808a-fc08cfafcaac)
+
+Navigate to line number 112
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/11522951-9b4b-46b3-ae51-980f7ef7531f)
+
+Copy the lines between line numbers 120 to 124 from the commented section and paste it below line number 112 as shown below
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/00162288-4bd6-459f-9085-5eaa7c90c858)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d8789193-4eae-4169-846d-a75b52893955)
+
+Now edit the lines 113 thru 116 as shown below
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/02213e07-5f55-4355-a1bf-7afb84732fcc)
