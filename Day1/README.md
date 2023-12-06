@@ -455,5 +455,20 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/2ead13ad-931c-4237-8278-9e586c3e36a1)
 
 ## Lab - Deploying application packaged jar files into JFrog Artifactory server
+As it is if we attempt to perform deploy, it would fail as shown below
+
 ```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn deploy
 ```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/96ace6b5-e1cb-4386-8389-956f3d13905e)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b0d8d6fc-1011-450d-924f-5dc823c1d9bc)
+
+This is because, we are yet to configure the JFrog Artifactory URL in the pom.xml file.
+
+Hence we need to configure the pom.xml as shown below
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8a91e42c-3c45-4fb1-91d6-bfe78edfa754)
