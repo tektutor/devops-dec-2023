@@ -88,4 +88,28 @@ OS name: "linux", version: "6.4.0-kali3-amd64", arch: "amd64", family: "unix"
   - Operations Team
     - need to learn infrastructure automation tools to provision machines locally or on cloud
     - need to learn configuration management tools to automate software installations & configurations
-  
+
+## What is Apache Ant?
+  - build tool mostly used by Java based projects
+  - open source tool developed by Apache Foundation
+  - When Apache Foundation used Ant build for one of their complex product called Jakarta, they realized Ant build tools lacks the following
+    - the use of XML to capture build instructions doesn't suit well and doesn't scale well for complex projects
+    - dependency management
+    - convention or standards - best practices
+
+## What is Apache Maven?
+- build tool used mostly by Java based projects
+- however, it can be used to build other language stack projects as well like C++, C#, etc.,
+- it is language agnostic build tool
+- supports
+  - dependency management
+  - has conventions for pretty everything
+    - it has conventions on how to name your projects
+    - it has conventions on how to track various version of your compenents/artifacts
+- though Maven also uses XML file, it doesn't capture build instructions, instead just has project name, its dependency, etc.,
+- it is object oriented build tool
+- it uses repositories
+  - supports 3 types of repositories
+    1. Local ( user home .m2 folder )
+    2. Private ( has proprietary lib/framework jar and opensource lib/framework jars and plugins )
+    3. Central Repository ( Web site that has all open sources lib/framework jars and plugins )
