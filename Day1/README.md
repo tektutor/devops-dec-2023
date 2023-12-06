@@ -570,3 +570,22 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/876a164f-12c9-4c10-b75d-5e91afb4e9ba)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/0b252fa5-a85f-4f0c-943d-e07bc22b9302)
 
+## Lab - Multi module project
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/multi-module-project
+mvn compile
+mvn install
+mvn deploy
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/20253ecc-fa0d-4187-b479-aabb6d2fe284)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/cbd79f95-dcc3-4f5e-b7bf-79e1d16dccdb)
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/4794b4e5-ead3-401f-b37d-4032dbca04f5)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1fd61ce9-c6fc-4bad-ba0f-13e79d1d5169)
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/90800d2e-5f1e-40f1-979f-31711d549a48)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e8938ea8-0170-4ff6-a65f-9711728acbf2)
