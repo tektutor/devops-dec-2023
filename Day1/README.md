@@ -372,6 +372,8 @@ http://localhost:8081
 ```
 
 Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/16d7ec1d-900d-4f02-a411-6553625e5316)
+
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/70fb7d71-be2e-4be8-99da-314b09b946de)
 
 The default JFrog Artifactory server login credentials are
@@ -510,3 +512,61 @@ Copy the lines between line numbers 120 to 124 from the commented section and pa
 
 Now edit the lines 113 thru 116 as shown below
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/02213e07-5f55-4355-a1bf-7afb84732fcc)
+Save the changes and close gedit editor.
+
+Let's check the JFrog Artifactory deployment url to see it empty
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/10451ff4-6aa6-4ae3-acf9-3c5ac5bc75fa)
+
+Now you may try to deploy as shown below
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn deploy
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c4ade022-c030-43b8-8f57-3932fe9856fd)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/784b7de9-b9f2-4a80-bb4d-5b3db9fc7437)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/54cb3e19-219c-4c82-9a68-b9483f1fd348)
+
+Now let us again check the JFrog Artifactory deployment url to notice the jar and pom files got deployed
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/aa20edb8-e034-417e-94a1-fd0330b81c6e)
+
+If you are able to see your jar and poms deployed onto JFrog Artifactory server, you have successfuly deployed !
+
+
+## Info - What is Super POM?
+- this comes with Maven installation
+- you can find this Super POM inside maven-installation-folder/lib/maven-model-xxxx.jar
+- this file has all the default global configuration like maven central repo url, plugin repo url, life-cycle phase and its respective plugin configurations
+
+## Info - What is Parent POM?
+- this is the top level pom file we manually create
+- this parent pom will have the name of the parent module defined in terms of maven co-ordinates
+- will have common dependencies and configurations which will be inherited by all child modules
+- the parent pom packaging must be marked as pom as they are not allowed to have source code
+- the parent module will have one or more module element for each child module
+
+## Info - What is Child POM?
+- every child module in a multi module project will have pom.xml under the child module folder which is referred as the Child POM
+- Child modules can optionally have source code, ie. this also could be parent some other child modules
+
+## Info - What is Effective POM?
+- Effective POM is the combination of properties, configurations inherited by Parent POM from the Super POM
+- Effective POM from the point of child pom would have inherited everything from its immediate parent
+- this is how, maven learns learns all the required properties to build a maven project
+## Lab - Printing the effective pom for CRM parent module
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/multi-module-project
+mvn help:effective-pom
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/babf2b10-5452-4936-8dcd-285374f92e0e)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/af57bb32-c504-47bb-bc7f-b7a8a87955a3)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/876a164f-12c9-4c10-b75d-5e91afb4e9ba)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/0b252fa5-a85f-4f0c-943d-e07bc22b9302)
+
