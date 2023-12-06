@@ -172,5 +172,13 @@ Compile will create target folder to place all the application compiled binaries
 
 Executing the Hello world application
 ```
-
+cd ~/devops-dec-2023/Day1/hello
+ls
+cd target/classes
+tree
+java org.tektutor.Hello
 ```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/18e4745a-b3a7-4537-9e61-350e989356d7)
+
