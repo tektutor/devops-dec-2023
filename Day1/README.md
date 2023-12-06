@@ -134,6 +134,11 @@ OS name: "linux", version: "6.4.0-kali3-amd64", arch: "amd64", family: "unix"
     - y - represents minor version
     - z - represents incremental version
 
+## Lab - Installing tree utility
+```
+sudo yum install -y tree
+```
+
 ## Lab - Cloning this TekTutor code repository (from the terminal) - One time activity
 ```
 cd ~
@@ -165,3 +170,7 @@ Expected output
 Compile will create target folder to place all the application compiled binaries as shown below
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e085076d-131e-4184-83cd-913dcf5a6bbb)
 
+Executing the Hello world application
+```
+
+```
