@@ -428,6 +428,21 @@ On the top left, click on "Artifactory" and "Artifacts" under that
 The url shown below is the URL we could use to deploy our application artifacts
 http://localhost:8082/artifactory/tektutor/
 
+## Lab - Packaging you application binaries as jar file
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn package
+cd target
+ls
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/61b0c511-5e17-48a3-b2fb-6391a8a408c0)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a6738c71-85fe-4947-aa02-1801280841db)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/db077c34-72cb-4e53-8f70-1042895f05a1)
+
 ## Lab - Deploying application packaged jar files into JFrog Artifactory server
 ```
 ```
