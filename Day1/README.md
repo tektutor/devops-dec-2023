@@ -301,3 +301,7 @@ mvn site
 ```
 
 The above maven command will generate html documentation based on the pom.xml. This documentation web pages can be accessed using web browsers by the team members to understanding the plugins and dependent libraries. 
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1a25bdad-6462-4a2d-a8f1-b52ebcdcb79d)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a20bfc2e-5019-4ac5-bf05-ffdcfc3fd393)
