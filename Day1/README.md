@@ -241,3 +241,29 @@ mvn help:describe -Dcmd=compile
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/42e6b16d-3916-40a8-b9a3-5d1f9e6ed236)
 
+## Lab - How maven uses the Maven co-ordinates to maintain the plugins and dependencies within maven local repository folder
+Maven co-ordinates for maven-compiler-plugin is
+<pre>
+groupId - org.apache.maven.plugins
+artifactId - jar name
+version - 3.11.0
+</pre>
+
+The above maven co-ordinates of maven-compiler-plugin will be used as a directory structure within maven local repository folder as shown below
+```
+cd ~/.m2/repository
+# the below folder is formed using groupId
+cd org/apache/maven/plugins
+
+## the below folder is formed using artifactId
+cd maven-compiler-plugin
+
+# the below folder is formed using version
+cd 3.11.0
+
+# you will be able to locate the maven-compiler-plugin jar and its pom in this directory
+ls -l
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/339b31cf-83b6-489d-bd53-e1f4a12c7f34)
