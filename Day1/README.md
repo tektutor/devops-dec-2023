@@ -192,3 +192,32 @@ tree target
 ```
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/19a0b4e7-ffea-430e-87cd-031956d52920)
+
+## Info - What are Maven Plugins?
+- Maven Plugins are jar files that are downloaded by Maven build tool on demand from Maven Central Repository website
+- Each Maven Plugin has one or more goals
+- Each goal supports one functionality
+- For example - maven-compiler-plugin supports 3 goals
+  1. compile
+  2. testCompile
+  3. help
+
+## Lab - Finding maven-compiler-plugin goals
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn help:describe -Dplugin=org.apache.maven.plugins:maven-compiler-plugin:3.11.0
+```
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/6785cd07-1106-44a9-9691-3c1d6b3437d0)
+
+
+## Info - Maven Life cycle
+
+Life cycle is a combination many Maven Phases, each Maven Phase invokes one or more Maven Plugins, each Plugin has one more goals.
+
+Maven supports 3 types of Life cycle
+1. default
+2. clean
+3. site 
