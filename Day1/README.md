@@ -266,5 +266,6 @@ ls -l
 ```
 
 Expected output
-![Uploading image.png…]()
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/46a324e0-5b36-49e9-8b4f-f7207871bf67)
+
 
