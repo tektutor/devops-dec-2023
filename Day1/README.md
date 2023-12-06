@@ -514,6 +514,9 @@ Now edit the lines 113 thru 116 as shown below
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/02213e07-5f55-4355-a1bf-7afb84732fcc)
 Save the changes and close gedit editor.
 
+Let's check the JFrog Artifactory deployment url to see it empty
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/10451ff4-6aa6-4ae3-acf9-3c5ac5bc75fa)
+
 Now you may try to deploy as shown below
 ```
 cd ~/devops-dec-2023
@@ -526,3 +529,8 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c4ade022-c030-43b8-8f57-3932fe9856fd)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/784b7de9-b9f2-4a80-bb4d-5b3db9fc7437)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/54cb3e19-219c-4c82-9a68-b9483f1fd348)
+
+Now let us again check the JFrog Artifactory deployment url to notice the jar and pom files got deployed
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/aa20edb8-e034-417e-94a1-fd0330b81c6e)
+
+If you are able to see your jar and poms deployed onto JFrog Artifactory server, you have successfuly deployed !
