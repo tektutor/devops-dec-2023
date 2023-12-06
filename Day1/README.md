@@ -225,6 +225,8 @@ Expected output
 
 Life cycle is a combination many Maven Phases, each Maven Phase invokes one or more Maven Plugins, each Plugin has one more goals.
 
+Maven life-cycle is a sequence of many maven phases executed from top to bottom order. For those phases some plugins are configured, the respective plugin goals will be invoked.
+
 Maven supports 3 types of Life cycle
 1. default
 2. clean
