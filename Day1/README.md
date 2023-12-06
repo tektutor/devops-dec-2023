@@ -229,3 +229,15 @@ Maven supports 3 types of Life cycle
 1. default
 2. clean
 3. site 
+
+## Lab - Listing Maven default life-cycle phases
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn help:describe -Dcmd=compile
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/42e6b16d-3916-40a8-b9a3-5d1f9e6ed236)
+
