@@ -379,7 +379,29 @@ The default JFrog Artifactory server login credentials are
 username - admin
 password - password
 </pre>
-When it prompts for changing the password, change it rps@12345
+When it prompts for changing the password, change it Rps@12345
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/be3cd670-663d-46ef-885f-8512228d8cd6)
+Click on "Get Started" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7f801806-7755-4279-811e-12b34eabcf24)
+Reset the password to Rps@12345
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3d174ae3-a232-4f42-b535-f6fa06d6204d)
+Click on "Next" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e1936eba-f5d6-4009-8390-1ba8b815cfc0)
+Click on "Skip" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a56a14e2-9e1f-404d-89f0-f9c03ef4c72d)
+Click on "Skip" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7ddc194c-c620-4367-ac86-d8a9e794af77)
+Click on "Skip" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/363dbbbf-eb61-4e53-896d-45fe52d91b01)
+Click on "Finish" button
+
 
 ## Lab - Deploying application packaged jar files into JFrog Artifactory server
 ```
