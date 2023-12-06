@@ -372,6 +372,8 @@ http://localhost:8081
 ```
 
 Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/16d7ec1d-900d-4f02-a411-6553625e5316)
+
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/70fb7d71-be2e-4be8-99da-314b09b946de)
 
 The default JFrog Artifactory server login credentials are
