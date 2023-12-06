@@ -1,4 +1,4 @@
-# Day1
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/2f49f32c-99b3-484f-afab-7d96b0293259)# Day1
 
 ## Checking the maven version on your RPS Lab machine
 ```
@@ -355,3 +355,158 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c4a12dae-af31-4e04-bf9a-0e9d253a7f4d)
 
 In the above screenshot, you can notice the maven build executed one test case as part of the build.  In case any one of the testcases or multiple test cases fail, the build will also fail.  The build will succeed, only if all the test cases passes.
+
+## Lab - Launching JFrog Artifactory server as a Docker container
+```
+cd ~
+docker run -d --name jfrog --hostname jfrog -p 8081-8082:8081-8082  releases-docker.jfrog.io/jfrog/artifactory-oss:latest
+docker ps
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5a1ae248-81fa-4127-8bb3-3748c7ef3c53)
+
+Accessing the JFrog Artifactory from your RPS CentOS machine Web browser
+```
+http://localhost:8081
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/70fb7d71-be2e-4be8-99da-314b09b946de)
+
+The default JFrog Artifactory server login credentials are
+<pre>
+username - admin
+password - password
+</pre>
+When it prompts for changing the password, change it Rps@12345
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/be3cd670-663d-46ef-885f-8512228d8cd6)
+Click on "Get Started" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7f801806-7755-4279-811e-12b34eabcf24)
+Reset the password to Rps@12345
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3d174ae3-a232-4f42-b535-f6fa06d6204d)
+Click on "Next" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e1936eba-f5d6-4009-8390-1ba8b815cfc0)
+Click on "Skip" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a56a14e2-9e1f-404d-89f0-f9c03ef4c72d)
+Click on "Skip" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7ddc194c-c620-4367-ac86-d8a9e794af77)
+Click on "Skip" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/363dbbbf-eb61-4e53-896d-45fe52d91b01)
+Click on "Finish" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/307675f2-6e7d-4c7f-821b-62efef29ff30)
+Click on "Create a repository" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/92ca2e72-c6eb-4857-afd8-a704b66a3365)
+Click on "Add Repository" and then select "Local Respository"
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8911835e-ac92-45aa-a587-1d53521a2e54)
+Select "Maven"
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/144e2bc1-e6e8-4a91-811c-253cfbcc1f01)
+type "tektutor" in the Repository key and click on "Create Local Respository" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/adfb0e4d-34fd-433a-b748-92d042223ec4)
+You may close the window without creating users.
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b01110bc-bd21-4da5-91e1-530eadcd873f)
+
+On the top Left, switch from "Administration" tab to "Application" tab
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d7baad06-746d-4450-9275-845e9106e68e)
+
+On the top left, click on "Artifactory" and "Artifacts" under that
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/4174240e-4e93-4c5f-bf9c-6e1b278e853f)
+
+The url shown below is the URL we could use to deploy our application artifacts
+http://localhost:8082/artifactory/tektutor/
+
+## Lab - Packaging you application binaries as jar file
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn package
+cd target
+ls
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/61b0c511-5e17-48a3-b2fb-6391a8a408c0)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a6738c71-85fe-4947-aa02-1801280841db)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/db077c34-72cb-4e53-8f70-1042895f05a1)
+
+## Lab - Installing(copying) the application jar and respective pom files into Maven local repository
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn install
+```
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/cf2862fd-fbf1-4d02-998f-591fc409c36e)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/2ead13ad-931c-4237-8278-9e586c3e36a1)
+
+## Lab - Deploying application packaged jar files into JFrog Artifactory server
+As it is if we attempt to perform deploy, it would fail as shown below
+
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn deploy
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/96ace6b5-e1cb-4386-8389-956f3d13905e)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b0d8d6fc-1011-450d-924f-5dc823c1d9bc)
+
+This is because, we are yet to configure the JFrog Artifactory URL in the pom.xml file.
+
+Hence we need to configure the pom.xml as shown below
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8a91e42c-3c45-4fb1-91d6-bfe78edfa754)
+
+Let's attempt to deploy the jar file as we are done with the pom.xml configuration
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn deploy
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/0512a387-1ae8-49cf-acb1-94f7cf776097)
+
+The above is due to the unauthorized login, i.e we need to configure maven settings.xml file with the JFrog Artifactory login credentials, so that maven can login into the JFrog Artifactory server and then can successfully deploy the application jar and poms respectively.
+
+Finding your maven installation path
+```
+mvn --version
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5e4f1dcc-1e59-42ed-b159-ba1f1166d116)
+
+We can now edit the settings.xml file at the below path
+
+gedit /home/jegan/Downloads/apache-maven-3.9.6/conf/settings.xml
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3d4c4a49-40c9-4ee6-808a-fc08cfafcaac)
+
+Navigate to line number 112
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/11522951-9b4b-46b3-ae51-980f7ef7531f)
+
+Copy the lines between line numbers 120 to 124 from the commented section and paste it below line number 112 as shown below
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/00162288-4bd6-459f-9085-5eaa7c90c858)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d8789193-4eae-4169-846d-a75b52893955)
+
+Now edit the lines 113 thru 116 as shown below
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/02213e07-5f55-4355-a1bf-7afb84732fcc)
