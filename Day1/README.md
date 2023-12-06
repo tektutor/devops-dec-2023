@@ -134,6 +134,16 @@ OS name: "linux", version: "6.4.0-kali3-amd64", arch: "amd64", family: "unix"
     - y - represents minor version
     - z - represents incremental version
 
+## Info - Maven Convention over Configuration
+- this is based 80-20 Principle
+- as per 80-20 Principle, they say if you consider any product, 80% of the times we use only 20% of the features of any product
+- those 20% of the features which are commonly used shall be identified and it should be implemented in such a way it is easy to use
+- most features which are rarely also must be supported, but it is ok if it requires hopping between multiple menu pages to reach out to the advanced features. As these advanced features are generally used by Expert users, that too rarely.
+- 80% of the times, maven build tool will be used by Java based projects
+- In some rare cases, maven build tool could also be used to build C++/C# projects, maven also supports such use-cases
+- But using maven to build C++/C# projects are rare, we may have to configure maven as those projects may or may not follow all the Maven conventions
+- If we follow Maven conventions, then we need to do little to no configurations, if we can't follow maven conventions, then we need to do more configurations
+
 ## Lab - Installing tree utility
 When the below prompts for password type 'rps@12345' as the password without quotes.
 ```
