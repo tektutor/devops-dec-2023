@@ -291,3 +291,13 @@ mvn help:describe -Dcmd=site
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/442cc708-4806-4505-9448-354842c97641)
+
+## Lab - Understanding the use of mvn site command
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn site
+```
+
+The above maven command will generate html documentation based on the pom.xml. This documentation web pages can be accessed using web browsers by the team members to understanding the plugins and dependent libraries. 
