@@ -305,3 +305,5 @@ The above maven command will generate html documentation based on the pom.xml. T
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1a25bdad-6462-4a2d-a8f1-b52ebcdcb79d)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a20bfc2e-5019-4ac5-bf05-ffdcfc3fd393)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3411b6cf-b3b7-4b1c-a86b-3761adf2081d)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e21ed833-be6d-41c6-8fde-5d59bfe871f2)
