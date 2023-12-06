@@ -269,3 +269,13 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/46a324e0-5b36-49e9-8b4f-f7207871bf67)
 
 
+## Lab - Listing the clean life-cycle phases
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn help:describe -Dcmd=clean
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/fa541d40-b6d5-4b74-883e-5538785a4f6c)
