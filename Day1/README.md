@@ -403,6 +403,24 @@ Click on "Skip" button
 Click on "Finish" button
 
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/307675f2-6e7d-4c7f-821b-62efef29ff30)
+Click on "Create a repository" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/92ca2e72-c6eb-4857-afd8-a704b66a3365)
+Click on "Add Repository" and then select "Local Respository"
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8911835e-ac92-45aa-a587-1d53521a2e54)
+Select "Maven"
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/144e2bc1-e6e8-4a91-811c-253cfbcc1f01)
+type "tektutor" in the Repository key and click on "Create Local Respository" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/adfb0e4d-34fd-433a-b748-92d042223ec4)
+You may close the window without creating users.
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b01110bc-bd21-4da5-91e1-530eadcd873f)
+
+On the top Left, switch from "Administration" tab to "Application" tab
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5f491795-ba0f-4fe9-9202-95aeda6d9ac4)
 
 
 ## Lab - Deploying application packaged jar files into JFrog Artifactory server
