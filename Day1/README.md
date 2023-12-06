@@ -510,3 +510,4 @@ Copy the lines between line numbers 120 to 124 from the commented section and pa
 
 Now edit the lines 113 thru 116 as shown below
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/02213e07-5f55-4355-a1bf-7afb84732fcc)
+Save the changes and close gedit editor.
