@@ -443,6 +443,17 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a6738c71-85fe-4947-aa02-1801280841db)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/db077c34-72cb-4e53-8f70-1042895f05a1)
 
+## Lab - Installing(copying) the application jar and respective pom files into Maven local repository
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/hello
+mvn install
+```
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/cf2862fd-fbf1-4d02-998f-591fc409c36e)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/2ead13ad-931c-4237-8278-9e586c3e36a1)
+
 ## Lab - Deploying application packaged jar files into JFrog Artifactory server
 ```
 ```
