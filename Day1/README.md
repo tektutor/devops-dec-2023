@@ -161,3 +161,6 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/bf1d5383-68e9-4cdd-ba5f-998649ef8230)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/9ea16905-9cb2-4da8-8104-2cb599023627)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ea9eca64-bb81-4cbc-8a75-f97756a5d4a0)
+
+Compile will create target folder to place all the application compiled binaries as shown below
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/bd6ac90b-a3ab-4767-9acb-dc39582f5361)
