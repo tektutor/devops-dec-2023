@@ -163,4 +163,5 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ea9eca64-bb81-4cbc-8a75-f97756a5d4a0)
 
 Compile will create target folder to place all the application compiled binaries as shown below
-![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/bd6ac90b-a3ab-4767-9acb-dc39582f5361)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e085076d-131e-4184-83cd-913dcf5a6bbb)
+
