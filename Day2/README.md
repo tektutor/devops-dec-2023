@@ -443,3 +443,25 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8561d0b5-8451-4ac7-b886-6737fbf79faa)
 
 At this point, we lost all data stored within the mysql container.  The reason being, we used the container storage, which is a very bad idea.  As containers are temporary resources, we shouldn't store data inside the container storage, instead we should use an external storage.  We will learn the best practice in our next lab exercise.
+
+
+## Lab - Using host directory as an external volume within mysql container to persist data permanently
+Let's create a mysql directory inside /tmp directory
+```
+mkdir -p /tmp/mysql 
+ls -lha /tmp/mysql
+```
+
+Let's see if any containers are running
+```
+docker ps -a
+```
+
+Let's create the mysql container using /tmp/mysql folder as the external storage within container
+```
+docker run -d --name mysql --hostname mysql -v /tmp/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root@123 mysql:latest
+docker ps
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/433a9feb-d617-46d2-81f3-41f5bb2223bf)
