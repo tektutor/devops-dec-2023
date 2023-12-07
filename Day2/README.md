@@ -144,6 +144,23 @@ https://docs.docker.com/engine/install/centos/
 ## Installing Docker in Mac
 https://docs.docker.com/desktop/install/mac-install/
 
+## What is Docker Image?
+- Docker Image is similar to window iso DVD image we download from Microsoft website
+- We can burn a DVD with windows iso, with that Windows Image DVD we can install Windows on any number of Laptops/PC
+- Docker Image is similar to ISO images
+- Docker Images container some pre-installed softwares
+- With Docker Image we can create as many containers as we need
+- a blueprint of a Container
+
+## What is Docker Container?
+- Container is a running instance of a Docker Image
+- When we create a container using a particular Docker Image, that containers gets an unique name and hostname
+- The container will be in any one of following state
+  - created
+  - running
+  - exited
+- The container gets an Private IP address
+- The container will have all the softwares installed on the Docker Image
 # Docker Commands
 
 ## Lab - Finding the docker version
