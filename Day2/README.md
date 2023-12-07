@@ -375,3 +375,12 @@ docker inspect -f {{.NetworkSettings.IPAddress}} mysql
 ```
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/4ad25269-ca34-4bdf-a369-8ebddc9dd10c)
+
+## Lab - Finding more details about a Docker image
+```
+docker image inspect mysql:latest
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/458af43c-cf20-4b66-98ca-57f3b409ee47)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b0b5853f-bd6b-4f61-831a-ddb05e4d165f)
