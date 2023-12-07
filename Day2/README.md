@@ -239,3 +239,13 @@ docker ps
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/247dbb7a-50d5-432d-af66-7a126fe4b2d4)
+
+## Lab - Stopping a running container
+```
+docker stop ubuntu1
+docker ps
+docker ps -a
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e8c30727-ebe8-49a5-a6f8-893b7f82c225)
