@@ -292,3 +292,14 @@ docker ps
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ccf7e3d9-25e3-463b-abd2-1372c062193f)
+
+
+## Lab - Delete multiple containers forcibly with one command 
+```
+docker ps -a
+docker rm -f pg jfrog c2
+docker ps -a
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/6b8c411d-5622-41c4-b46d-a9d200a29056)
