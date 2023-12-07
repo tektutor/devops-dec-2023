@@ -442,3 +442,4 @@ docker ps -a
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8561d0b5-8451-4ac7-b886-6737fbf79faa)
 
+At this point, we lost all data stored within the mysql container.  The reason being, we used the container storage, which is a very bad idea.  As containers are temporary resources, we shouldn't store data inside the container storage, instead we should use an external storage.  We will learn the best practice in our next lab exercise.
