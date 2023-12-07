@@ -368,3 +368,10 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/2a839201-2467-4fff-921b-85485081f9e7)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8133d24d-9b8c-45c4-a8bd-1b02993305dc)
 
+## Lab - Finding the IP address of a running container
+```
+docker inspect mysql | grep IPA
+docker inspect -f {{.NetworkSettings.IPAddress}} mysql
+```
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/4ad25269-ca34-4bdf-a369-8ebddc9dd10c)
