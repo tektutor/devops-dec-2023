@@ -518,3 +518,15 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/dafcf796-8cc6-4525-868a-6ccc1a3f859b)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c72c6422-fad4-42cc-9f11-e848a4a8b6eb)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/0bf9754b-6894-4814-8a60-6820d43ffd78)
+
+
+## Lab - Creating nginx web server as a container
+```
+docker ps -a
+docker run -d --name web1 --hostname web1 nginx:latest
+docker ps
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a0f208ed-94ac-4330-8b22-56738ecb9df0)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7265d154-6358-4a83-985f-f233cab370d7)
