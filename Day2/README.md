@@ -517,3 +517,4 @@ SELECT * FROM training;
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/dafcf796-8cc6-4525-868a-6ccc1a3f859b)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c72c6422-fad4-42cc-9f11-e848a4a8b6eb)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/0bf9754b-6894-4814-8a60-6820d43ffd78)
