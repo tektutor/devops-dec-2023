@@ -1,6 +1,6 @@
 # Day 2 - Docker
 
-## Processort Packaging
+## Processor Packaging
 - Two of types of Packing
   SCM
   - Single Chip Module
