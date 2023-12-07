@@ -530,3 +530,18 @@ docker ps
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a0f208ed-94ac-4330-8b22-56738ecb9df0)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7265d154-6358-4a83-985f-f233cab370d7)
+
+## Lab - Creating nginx web server with port forward to expose the container service to outside world
+```
+docker rm -f web1
+docker run -d --name web1 --hostname web1 -p 8001:80 nginx:latest
+docker ps
+docker inspect web1 | grep IPA
+ifconfig ens192
+curl http://localhost:8001
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/0a0751a6-a303-4065-a929-c4ec1451a2a6)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/094c6591-a77e-4431-aef1-7dfd84c6a257)
+
