@@ -465,3 +465,36 @@ docker ps
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/433a9feb-d617-46d2-81f3-41f5bb2223bf)
+
+
+Let's connect to mysql server using the mysql client that comes with the mysql container
+```
+docker exec -it mysql /bin/bash
+mysql -u root -p
+SHOW DATABASES;
+CREATE DATABASE tektutor;
+USE tektutor;
+SHOW TABLES;
+CREATE TABLE training (id INT NOT NULL, name VARCHAR(200), duration VARCHAR(200), PRIMARY KEY(id) );
+INSERT INTO training VALUES ( 1, "Kubernetes", "5 Days" );
+INSERT INTO training VALUES ( 2, "Microservices using Spring Boot Framework", "5 Days" );
+exit
+exit
+```
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/75bc42f4-0937-41a1-8400-f18beb53298b)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a6840224-cf59-45e4-b945-3ef44d82cefc)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/91dca4f8-07ed-4447-babe-aa690ce5d779)
+
+
+Let's delete the mysql container forcibly
+```
+docker rm -f mysql
+docker ps -a
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a1d81ee4-0a33-42be-8896-d9de53c9835e)
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/91c2a3a7-4c54-4512-9fa1-8b5f8d8d1af8)
