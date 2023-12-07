@@ -410,4 +410,30 @@ When it prompts for password, type 'root@123' without quotes.
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/727a8cc0-2a97-499e-ba59-9bc50a98f93c)
 
+Creating a database in the mysql db server and switching to the database
+```
+SHOW DATABASES;
+CREATE DATABASE tektutor;
+USE tektutor;
+```
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/867daf1d-fc7e-4953-a578-5c33b324c44c)
+
+Let's create a table and insert some records as shown below
+```
+SHOW TABLES;
+CREATE TABLE training (id INT NOT NULL, name VARCHAR(200) NOT NULL, duration VARCHAR(200) NOT NULL, PRIMARY KEY(id) );
+INSERT INTO training VALUES ( 1, "DevOps", "5 Days" );
+INSERT INTO training VALUES ( 2, "Kubernetes", "5 Days" );
+SELECT * FROM training;
+```
+
+Let's disconnect my mysql server, exit and delete the container
+```
+
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/464009ea-0430-4819-bf28-f69695e6f7b9)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8561d0b5-8451-4ac7-b886-6737fbf79faa)
 
