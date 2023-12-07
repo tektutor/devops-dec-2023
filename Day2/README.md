@@ -145,6 +145,8 @@ Expected ouput
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/80cb0ddd-78b0-43f8-b41a-ffe9df847cf6)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/bfe50e3a-23ac-4850-916b-b3e3d9d458ea)
 
+The default location of Docker Local Registry is /var/lib/docker
+
 ## Lab - Listing docker images in your docker local registry
 ```
 docker images
