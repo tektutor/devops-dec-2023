@@ -250,3 +250,13 @@ docker ps -a
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e8c30727-ebe8-49a5-a6f8-893b7f82c225)
+
+## Lab - Start an exited container
+```
+docker ps -a
+docker start ubuntu1
+docker ps
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d10906e9-fbb3-4bad-b88e-5f0a41a3b3a4)
