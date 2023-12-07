@@ -303,3 +303,36 @@ docker ps -a
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/6b8c411d-5622-41c4-b46d-a9d200a29056)
+
+## Lab - Deleting multiple containers forcibly without using their names
+
+Let's first create 3 containers
+```
+docker run -dit --name ubuntu1 --hostname ubuntu1 ubuntu:16.04 /bin/bash
+docker run -dit --name ubuntu2 --hostname ubuntu2 ubuntu:16.04 /bin/bash
+docker run -dit --name ubuntu3 --hostname ubuntu3 ubuntu:16.04 /bin/bash
+```
+
+Let's list and check them if they are running
+```
+docker ps
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/75da2abf-50b7-447f-a0bb-cef8ddadb810)
+
+Let's list only the container ids of currently running containers
+```
+docker ps -q
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/fef4b4f4-94d5-4b3b-a2eb-2c1cc687a022)
+
+Let's now combine the above command as a sub-command to delete all running containers
+```
+docker rm -f $(docker ps -q)
+```
+
+Expected ouput
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/be6f56ad-e05d-4809-9db3-90926a3c7da7)
