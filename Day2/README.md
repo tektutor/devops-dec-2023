@@ -29,6 +29,13 @@
     - Microsoft Hyper-V ( Windows ) - comes with server grade windows
     - Oracle VirtualBox ( Linux, Windows & Mac ) - Free  
     - KVM ( Linux ) - opensource & Free
+- this type of virtualization is considered heavy weight as each OS that we install in a Virtual Machine requires dedicated hardware resources
+  - we need to allocate CPU Cores to each VM
+  - we need to allocate RAM to each VM
+  - we need to allocate Storage to each VM
+  - Virtual machine also gets virtual network card and virtual graphics cards, etc.,
+- each Virtual Machine represents one fully functional Operating System, these OS that runs inside the Virtual Machine is referred as Guest OS
+- In case of Type 2 Virtualization software, the OS on which the virtualization software is installed is referred as Host OS
 ## Hypervisor vs Docker
 
 ## High Level Architecture of Hypervisor
