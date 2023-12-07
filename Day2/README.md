@@ -97,6 +97,7 @@ Advantages
 - Whaever software are there in the Container Image, are available in a ready to use fashion on the containers
   
 ## High Level Architecture of Docker
+![Docker Architecture](DockerHighLevelArchitecture.png)
 
 ## Docker Alternatives
 
