@@ -280,3 +280,15 @@ docker rm ubuntu1
 ```
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ea3aa885-c4c3-4078-8934-a80a49e8833f)
+
+## Lab - Forcibly deleting a running container
+```
+docker ps
+docker run -dit --name ubuntu1 --hostname ubuntu1 ubuntu:16.04 /bin/bash
+docker ps
+docker rm -f ubuntu1
+docker ps
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ccf7e3d9-25e3-463b-abd2-1372c062193f)
