@@ -336,3 +336,14 @@ docker rm -f $(docker ps -q)
 
 Expected ouput
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/be6f56ad-e05d-4809-9db3-90926a3c7da7)
+
+
+## Lab - Creating a mysql db server container
+```
+docker images
+docker run -d --name mysql --hostname mysql -e MYSQL_ROOT_PASSWORD=root@123 mysql:latest
+docker ps
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ea89f52a-d5fa-40b7-b292-c31555da7296)
