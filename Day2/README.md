@@ -99,6 +99,26 @@ Advantages
 ## High Level Architecture of Docker
 ![Docker Architecture](DockerHighLevelArchitecture.png)
 
+## What is Container Engine?
+- high-level software which is also end-user friendly
+- Container Engines depends on container Runtime softwares to manage containers
+- as this is user-friendly, end-users like us tend to use this software instead of Container Runtime
+- Example:
+  - Docker is a Container Engine which internally depends on Containerd that in turn depends on runC Container Runtime
+  - Podman is a Container Engine which internally depends on CRI-O Container Runtime
+    
+
+## What is a Container Runtime?
+- is a low-level software that knows how to manage containers
+- manage containers
+  - create containers in background/foreground
+  - list containers
+  - delete containers
+  - start/stop/restart/kill/abort containers
+- it is not so user-friendly software, hence normally no end-users use this software directly
+
 ## Docker Alternatives
+- Podman
+- Containerd
 
 
