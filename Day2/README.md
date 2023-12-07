@@ -242,6 +242,7 @@ Expected output
 
 ## Lab - Stopping a running container
 ```
+docker ps
 docker stop ubuntu1
 docker ps
 docker ps -a
