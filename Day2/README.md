@@ -77,6 +77,12 @@ Advantages
 
 ## High Level Architecture of Hypervisor
 
+## Linux Kernel Features that enable Container Technology
+- Namespace
+  - this helps in isolating one container from other containers
+- Control Groups (CGroups)
+  - this helps in applying some resource quota restrications for containers
+
 ## Docker Overview
 - light-weight application virtualization technology
 - each container represents one running application
