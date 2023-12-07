@@ -1,4 +1,4 @@
-# Day 2 - Docker
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ecb69e94-b42a-461d-9f01-0096e6608100)# Day 2 - Docker
 
 ## Processor Packaging
 - Two of types of Packing
@@ -501,3 +501,19 @@ If you check the local machine /tmp/mysql folder, it would look as shown below
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/64e110f2-2029-4080-a56d-f85b96e1309b)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/85a9b78a-0327-41bc-b9d3-3f2a954f1c84)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5eb45e95-31e1-4cd3-9c67-7f17b64fcf2c)
+
+Let's create a new mysql container mounting the same /tmp/mysql local folder as shown below
+```
+docker ps -a
+docker run -d --name mysql --hostname mysql -v /tmp/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root@123 mysql:latest
+docker ps
+docker exec -it mysql bash
+SHOW DATABASES;
+USE tektutor;
+SHOW TABLES;
+SELECT * FROM training;
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/dafcf796-8cc6-4525-868a-6ccc1a3f859b)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c72c6422-fad4-42cc-9f11-e848a4a8b6eb)
