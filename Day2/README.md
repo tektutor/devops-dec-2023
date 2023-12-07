@@ -132,6 +132,18 @@ Advantages
 - Podman
 - Containerd
 
+## Installing Docker in Windows
+https://docs.docker.com/desktop/install/windows-install/
+
+## Installing Docker in Ubuntu
+https://docs.docker.com/engine/install/ubuntu/
+
+## Installing Docker in CentOS
+https://docs.docker.com/engine/install/centos/
+
+## Installing Docker in Mac
+https://docs.docker.com/desktop/install/mac-install/
+
 # Docker Commands
 
 ## Lab - Finding the docker version
@@ -192,3 +204,5 @@ ubuntu:16.04 - is the docker image we downloaded from Docker Hub Remote Registry
 </pre>
 
 As long as the bash shell contintues to run inside the container, the container will be running.  If we exit the bash shell inside the container then it will exit container as well, leading to stopping the container.
+
+Listing the 
