@@ -545,3 +545,12 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/0a0751a6-a303-4065-a929-c4ec1451a2a6)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/094c6591-a77e-4431-aef1-7dfd84c6a257)
 
+## Lab - Creating a container in the interactive/foreground mode
+```
+docker ps
+docker run -it --name c1 --hostname c1 ubuntu:16.04 /bin/bash
+docker ps
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5227108f-8f20-4f04-b7dd-59870d4ceb0b)
