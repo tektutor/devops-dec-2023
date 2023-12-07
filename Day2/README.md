@@ -347,3 +347,12 @@ docker ps
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ea89f52a-d5fa-40b7-b292-c31555da7296)
+
+
+Checking the mysql db server logs
+```
+docker logs mysql
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1859615a-0904-48d8-b0c1-f21570baba8e)
