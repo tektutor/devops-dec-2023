@@ -356,3 +356,15 @@ docker logs mysql
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1859615a-0904-48d8-b0c1-f21570baba8e)
+
+## Lab - Finding details of mysql container
+```
+docker ps
+docker inspect mysql
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/98bc5036-21e7-48d6-9c25-1a1fd84f8620)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/2a839201-2467-4fff-921b-85485081f9e7)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8133d24d-9b8c-45c4-a8bd-1b02993305dc)
+
