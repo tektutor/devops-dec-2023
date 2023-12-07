@@ -145,3 +145,11 @@ Expected ouput
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/80cb0ddd-78b0-43f8-b41a-ffe9df847cf6)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/bfe50e3a-23ac-4850-916b-b3e3d9d458ea)
 
+## Lab - Listing docker images in your docker local registry
+```
+docker images
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/13669931-31bb-409f-a0b9-e8eded623abd)
+
