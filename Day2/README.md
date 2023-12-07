@@ -427,13 +427,18 @@ INSERT INTO training VALUES ( 1, "DevOps", "5 Days" );
 INSERT INTO training VALUES ( 2, "Kubernetes", "5 Days" );
 SELECT * FROM training;
 ```
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/464009ea-0430-4819-bf28-f69695e6f7b9)
 
 Let's disconnect my mysql server, exit and delete the container
 ```
-
+exit
+exit
+docker ps
+docker rm -f mysql
+docker ps -a
 ```
 
 Expected output
-![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/464009ea-0430-4819-bf28-f69695e6f7b9)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8561d0b5-8451-4ac7-b886-6737fbf79faa)
 
