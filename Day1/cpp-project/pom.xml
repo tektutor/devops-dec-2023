@@ -1,0 +1,85 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.tektutor</groupId>
+	<artifactId>hello-cpp</artifactId>
+	<version>1.0</version>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.11.0</version>
+				<executions>
+					<execution>
+						<id>default-compile</id>
+						<phase>none</phase>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.3.1</version>
+				<executions>
+					<execution>
+						<id>default-resources</id>
+						<phase>none</phase>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>3.2.0</version>
+				<executions>
+					<execution>
+						<id>default-clean</id>
+						<phase>none</phase>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- 
+			The below configuration helps invoking exec-maven-plugin during compile
+			phase to issue the below command
+				make
+			so that it builds the c++ project
+
+			It is also configured to clean up the bin folder thru mvn clean command.
+			-->  
+			<plugin>
+			    <groupId>org.codehaus.mojo</groupId>
+    			    <artifactId>exec-maven-plugin</artifactId>
+    			    <version>3.1.1</version>
+			    <executions>
+				<execution>
+					<id>custom-cppCompile</id>
+					<phase>compile</phase>
+					<goals>
+						<goal>exec</goal>
+					</goals>
+					<configuration>
+						<executable>make</executable>
+						<workingDirectory>.</workingDirectory>
+					</configuration>
+				</execution>
+				<execution>
+					<id>custom-clean</id>
+					<phase>clean</phase>
+					<goals>
+						<goal>exec</goal>
+					</goals>
+					<configuration>
+						<executable>make</executable>
+						<arguments>
+							<argument>clean</argument>
+						</arguments>
+						<workingDirectory>.</workingDirectory>
+					</configuration>
+				</execution>
+			    </executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
