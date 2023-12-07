@@ -376,6 +376,14 @@ docker inspect -f {{.NetworkSettings.IPAddress}} mysql
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/4ad25269-ca34-4bdf-a369-8ebddc9dd10c)
 
+Pinging the container IP from your RPS CentOS machine terminal
+```
+ping 172.17.0.2
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8fb28591-023f-4a50-8948-350a0d9a8000)
+
 ## Lab - Finding more details about a Docker image
 ```
 docker image inspect mysql:latest
