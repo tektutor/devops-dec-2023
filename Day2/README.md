@@ -392,3 +392,22 @@ docker image inspect mysql:latest
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/458af43c-cf20-4b66-98ca-57f3b409ee47)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b0b5853f-bd6b-4f61-831a-ddb05e4d165f)
+
+## Lab - Connecting to mysql server using mysql client inside the container shell
+
+Getting inside the mysql container shell
+```
+docker exec -it mysql /bin/bash
+ls
+```
+
+Connecting to mysql server, using the mysql client that comes with the mysql container
+```
+mysql -u root -p
+```
+When it prompts for password, type 'root@123' without quotes.
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/727a8cc0-2a97-499e-ba59-9bc50a98f93c)
+
+
