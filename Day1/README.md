@@ -589,3 +589,18 @@ Expected output
 
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/90800d2e-5f1e-40f1-979f-31711d549a48)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e8938ea8-0170-4ff6-a65f-9711728acbf2)
+
+## Lab - Customizing maven to build a c++ project
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/cpp-project
+mvn compile
+mvn clean
+mvn clean compile
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/4429da59-66dc-4513-a30f-f4856b221f20)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/dd129edf-ed27-40fd-8288-aaebbe22b1e7)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/9384d154-1dea-47c9-8df7-034bb3e825b4)
