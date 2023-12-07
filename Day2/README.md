@@ -172,3 +172,23 @@ docker images
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7f445a47-f2d4-44af-9256-4bc590ee1b46)
+
+
+## Lab - Creating a container in background
+```
+docker run -dit --name ubuntu1 --hostname ubuntu1 ubuntu:16.04 /bin/bash
+```
+The above command will create a new container and start running the container
+
+Things to note
+<pre>
+d - stands for deattached/daemon i.e runs the container in the background
+it- interactive terminal
+name - ubuntu1 is the name of the container we have assigned
+hostname - ubuntu1 is the hostname we have assigned for the container
+ubuntu:16.04 - is the docker image we downloaded from Docker Hub Remote Registry
+16.04 - is the tag/version of ubuntu we downloaded from Docker Hub Remote Registry
+/bin/bash - is the shell we launched inside the container
+</pre>
+
+As long as the bash shell contintues to run inside the container, the container will be running.  If we exit the bash shell inside the container then it will exit container as well, leading to stopping the container.
