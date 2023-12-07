@@ -121,4 +121,15 @@ Advantages
 - Podman
 - Containerd
 
+# Docker Commands
+
+## Lab - Finding the docker version
+```
+docker --version
+```
+
+Expected ouput
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ee1a7535-bcad-4898-b0d3-faf1aba7cd97)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/80cb0ddd-78b0-43f8-b41a-ffe9df847cf6)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/bfe50e3a-23ac-4850-916b-b3e3d9d458ea)
 
