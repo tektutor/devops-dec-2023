@@ -86,6 +86,15 @@ Advantages
 - containers are just application process that runs in separate namespace
 - containers will never be able to replace Operating System or Virtual Machines
 - containers are not competing technology to Virtualization, they are complementing technology. Meaning, they can used in combination.
+
+- each container represents one application
+- each container runs in a separate namespace
+- each container has its own virtual network stack
+- hence, every containers gets one or more IP Addresses
+- containers has its own file system
+- containers are created using Container Images
+- Container Images comes with pre-loaded/pre-installed applications
+- Whaever software are there in the Container Image, are available in a ready to use fashion on the containers
   
 ## High Level Architecture of Docker
 
