@@ -495,6 +495,3 @@ docker ps -a
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a1d81ee4-0a33-42be-8896-d9de53c9835e)
-
-Expected output
-![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/91c2a3a7-4c54-4512-9fa1-8b5f8d8d1af8)
