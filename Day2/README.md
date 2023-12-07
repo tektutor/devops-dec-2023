@@ -131,6 +131,7 @@ Advantages
 ## Lab - Finding the docker version
 ```
 docker --version
+docker info
 ```
 
 Expected ouput
