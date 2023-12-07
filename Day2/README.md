@@ -153,3 +153,10 @@ docker images
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/13669931-31bb-409f-a0b9-e8eded623abd)
 
+## Lab - Deleting a Docker Image from your local docker registry
+```
+docker rmi hello-world:latest
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c2472df5-a9eb-48b1-abb5-5419e713a8ad)
