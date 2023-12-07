@@ -203,6 +203,8 @@ ubuntu:16.04 - is the docker image we downloaded from Docker Hub Remote Registry
 /bin/bash - is the shell we launched inside the container
 </pre>
 
+Each time we execute the docker run command, it would create a new container and starts that, hence we must provide a unique container name and hostname.
+
 As long as the bash shell contintues to run inside the container, the container will be running.  If we exit the bash shell inside the container then it will exit container as well, leading to stopping the container.
 
 Let us list the docker images to check if the above command has download the ubuntu:16.04 image from Docker Hub - Remote Registry to Local Docker Registry
