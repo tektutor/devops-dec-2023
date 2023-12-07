@@ -205,4 +205,18 @@ ubuntu:16.04 - is the docker image we downloaded from Docker Hub Remote Registry
 
 As long as the bash shell contintues to run inside the container, the container will be running.  If we exit the bash shell inside the container then it will exit container as well, leading to stopping the container.
 
-Listing the 
+Let us list the docker images to check if the above command has download the ubuntu:16.04 image from Docker Hub - Remote Registry to Local Docker Registry
+```
+docker images
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/58a9599e-da46-42c1-9d05-ffb38473c643)
+
+Finding if the ubuntu1 container that we created is running
+```
+docker ps
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/247dbb7a-50d5-432d-af66-7a126fe4b2d4)
