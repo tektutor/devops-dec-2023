@@ -270,3 +270,13 @@ docker ps
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/0acee6c2-cb7e-4e49-afb3-83787b896755)
+
+## Lab - Deleting a running container
+```
+docker ps
+docker rm ubuntu1
+docker stop ubuntu1
+docker rm ubuntu1
+```
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ea3aa885-c4c3-4078-8934-a80a49e8833f)
