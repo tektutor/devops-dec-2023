@@ -495,3 +495,9 @@ docker ps -a
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a1d81ee4-0a33-42be-8896-d9de53c9835e)
+
+
+If you check the local machine /tmp/mysql folder, it would look as shown below
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/64e110f2-2029-4080-a56d-f85b96e1309b)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/85a9b78a-0327-41bc-b9d3-3f2a954f1c84)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5eb45e95-31e1-4cd3-9c67-7f17b64fcf2c)
