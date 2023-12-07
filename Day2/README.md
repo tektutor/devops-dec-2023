@@ -162,3 +162,13 @@ docker rmi hello-world:latest
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c2472df5-a9eb-48b1-abb5-5419e713a8ad)
+
+## Lab - Downloading docker image from Docker Remote Registry to Docker Local Registry
+```
+docker images
+docker pull hello-world:latest
+docker images
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7f445a47-f2d4-44af-9256-4bc590ee1b46)
