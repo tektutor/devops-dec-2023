@@ -78,7 +78,15 @@ Advantages
 ## High Level Architecture of Hypervisor
 
 ## Docker Overview
-
+- light-weight application virtualization technology
+- each container represents one running application
+- containers don't run OS
+- containers dont' get their own dedicated hardware resources
+- containers don't have their own OS Kernel
+- containers are just application process that runs in separate namespace
+- containers will never be able to replace Operating System or Virtual Machines
+- containers are not competing technology to Virtualization, they are complementing technology. Meaning, they can used in combination.
+  
 ## High Level Architecture of Docker
 
 ## Docker Alternatives
