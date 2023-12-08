@@ -6,18 +6,22 @@
   - configuration_tool: Ansible
   tasks:
   - name: Install nginx in Ubuntu ansible node
+    when: ansible_distribution == "Ubuntu"
     apt: name=nginx state=latest update_cache=yes
 
   - name: Start nginx web server in Ubuntu ansible node
+    when: ansible_distribution == "Ubuntu"
     shell: service nginx start
 
   - name: Create the custom web root folder
     file: path=/var/html state=directory mode=0777
 
-  - name: Configure nginx web serve to serve web pages from our custom folder 
+  - name: Configure nginx web serve to serve web pages from our custom folder in Ubuntu ansible node
+    when: ansible_distribution == "Ubuntu"
     copy: src=default dest=/etc/nginx/sites-available/default
 
   - name: Restart nginx web server in Ubuntu ansible node to apply the config changes
+    when: ansible_distribution == "Ubuntu"
     shell: service nginx restart
 
   - name: Retrieve IP address of the ansible node
