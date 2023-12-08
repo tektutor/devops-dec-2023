@@ -462,3 +462,17 @@ ssh -p 2003 root@localhost
 exit
 ```
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8309c81c-c153-42e3-afb9-2a95e5d43327)
+
+## Lab - Ping the user-defined inventory groups
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+cat inventory
+ansible -i inventory dev -m ping
+ansible -i inventory qa -m ping
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/07a7bf24-aec5-4d9e-9d7b-24d17e5acc77)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f060f5f3-f541-4989-970e-c06a40e6dbdb)
