@@ -433,3 +433,12 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d63dd21e-cd0a-4cd0-82aa-ce789adef0cb)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/357ad3d3-572e-4a3a-a6e7-7a5e3eb94f1e)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ea475d93-290e-498e-b7ae-ed920ce07e18)
+
+Other interesting features supported by Ansible vault
+```
+ansible-vault view jfrog-credentials.yml
+ansible-vault edit jfrog-credentials.yml
+ansible-vault decrypt jfrog-credentials.yml
+ansible-vault encrypt jfrog-credentials.yml
+ansible-vault rekey jfrog-credentials.yml
+```
