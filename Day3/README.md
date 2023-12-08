@@ -47,7 +47,13 @@
 - Ansible core was developed as an open source product
 - Once Ansible Core gained popularity, Red Hat acquired Ansible Inc, hence Ansible is a Red Hat product
 - Later, IBM acquired Red Hat, hence it is an IBM product
+
 ## What are the Ansible Alternatives
 - Puppet
 - Chef and
 - Salt
+
+## What is an Ansible Playbook?
+- is the automation script written in YAML file
+- this helps in software installation and configuration automation
+- it would be invoked one or more Ansible Modules in a specific order one after the other
