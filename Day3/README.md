@@ -369,6 +369,9 @@ Expected output
 
 ## Demo - Ansible Tower
 
+Installing Ansible Tower Opensource (AWX)
+https://medium.com/@jegan_50867/installing-ansible-tower-awx-e46d5231357d
+
 When you login to Anisble Tower Web Interface looks as shown below
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/84068656-abf0-4455-ba9d-3a0af6e0826b)
 
