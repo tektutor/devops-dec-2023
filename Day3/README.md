@@ -152,6 +152,11 @@ Expected output
 
 
 ## Lab - Ansible ad-hoc command to retrieve facts about the ansible nodes using setup ansible module
+
+Things to know about setup ansible module
+- the setup modules gets invoked as the very first task in a playbook by default
+- it collects many useful details, like what OS the ansible node has, what is the python version installed, hardware details, kernel details, etc..,
+
 ```
 cd ~/devops-dec-2023
 git pull
