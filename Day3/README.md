@@ -315,3 +315,121 @@ Things to Note
 
 Recommended reference
 https://jinja.palletsprojects.com/en/3.1.x/
+
+
+## Lab - Download jar from JFrog Artifactory server using Ansible playbook
+Just in case, your JFrog Artifactory container is not running, you need to create it as shown below
+```
+docker run -d --name jfrog --hostname jfrog -p 8081-8082:8081-8082 releases-docker.jfrog.io/jfrog/artifactory-oss:latest
+docker ps
+```
+
+You can access the JFrog Artifactory from your RPS Lab web browser
+```
+http://localhost:8081
+```
+You need to change the password to 'Rps@12345' without quotes.
+
+
+Then you need to deploy the application jars as shown below
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/multi-module-project
+mvn deploy
+mvn clean
+```
+
+Now you can procceed as shown below
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ls -l
+ansible-playbook download-artifacts-from-jfrog-artifactory-using-playbook.yml
+ls -l
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7d72cccb-639e-4fa5-9ed0-84ffb0deec07)
+
+## Lab - Passing extra variables to ansible playbook
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+curl http://localhost:8002
+ansible-playbook install-nginx-playbook-with-template-module.yml -e greeting_msg=Welcome
+curl http://localhost:8002
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c8c01767-2392-4df1-b3a8-2c0770ecf2be)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/11d80062-36ee-4f2c-9369-b73f332576cb)
+
+## Demo - Ansible Tower
+
+Installing Ansible Tower Opensource (AWX)
+https://medium.com/@jegan_50867/installing-ansible-tower-awx-e46d5231357d
+
+When you login to Anisble Tower Web Interface looks as shown below
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/84068656-abf0-4455-ba9d-3a0af6e0826b)
+
+Create a new project ( GitHub Integration )
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/cafa1c15-13bc-4bef-980e-1a291651c267)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/4f45cc44-84c4-4b6c-b2ba-a82154e93834)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7e02fb11-142e-45ed-9238-d4f6b1752006)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/cfc793e9-9760-4d8d-8948-74b9e8a4c17b)
+
+We need to add a new credential and paste the private key we created in the RPS machine and save it.
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1dec1250-594d-453b-a9f2-6390886643d9)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/65bed279-1a00-4685-b9aa-83ff4ffb1c1b)
+
+We need to create an inventory
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1b097adc-28b2-469e-b65a-9394c3a2c1b3)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3fa354af-4a56-4835-90f7-7f2fdb54b15f)
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/9978556a-570c-4886-adf6-041aff733df9)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/453bdd11-9fc6-4c3d-9712-528214c7976a)
+
+We need to create a Job Template to configure and run an Ansible Playbook within Ansible Tower
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f8cde36d-3363-4e90-a821-6f02931df5c2)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/2401fcd1-9166-4d5f-92c2-da0588c16932)
+
+We need to launch the Job to run the Ansible Playbook
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/9c544c2c-185a-4ba0-a9c2-543fc951fc7c)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/577f794f-9ead-4068-80e3-7daae8053dbf)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/05b4c8cc-b2ec-4683-b6d8-a61f47b19b31)
+
+## Lab - Using Ansible vault to protect sensitive data like login credentials
+
+When prompts for password, type 'Rps@12345' without quotes.
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible-vault create jfrog-credentials.yml
+cat jfrog-credentials.yml
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ed6cecb4-3cd3-4715-8948-34f324f45291)
+
+
+Now, let's use the jfrog-crentials which is ansible vault protected in our ansible playbook, when prompts for password type 'RpsW12345' without quotes.
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+cat download-artifacts-from-jfrog-artifactory-using-playbook-with-vault.yml
+ansible-playbook download-artifacts-from-jfrog-artifactory-using-playbook-with-vault.yml
+cat jfrog-credentials.yml
+ansible-playbook download-artifacts-from-jfrog-artifactory-using-playbook-with-vault.yml --ask-vault-pass
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e06d420a-9062-4927-98b7-cfe9bf533f57)
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d63dd21e-cd0a-4cd0-82aa-ce789adef0cb)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/357ad3d3-572e-4a3a-a6e7-7a5e3eb94f1e)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ea475d93-290e-498e-b7ae-ed920ce07e18)
