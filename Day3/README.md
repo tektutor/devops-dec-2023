@@ -372,4 +372,9 @@ Expected output
 When you login to Anisble Tower Web Interface looks as shown below
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/84068656-abf0-4455-ba9d-3a0af6e0826b)
 
+Create a new project ( GitHub Integration )
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/cafa1c15-13bc-4bef-980e-1a291651c267)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/4f45cc44-84c4-4b6c-b2ba-a82154e93834)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7e02fb11-142e-45ed-9238-d4f6b1752006)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/cfc793e9-9760-4d8d-8948-74b9e8a4c17b)
 
