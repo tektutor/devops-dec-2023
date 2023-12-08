@@ -184,6 +184,19 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1ce9114b-8d79-4fdb-88a1-5ca9935a9e42)
 
 
+## Lab - Getting ansible help about any ansible module
+To exit the exit, type letter 'q' without quotes
+```
+ansible-doc file
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/fc9a7b90-dc87-4054-88c4-5a058e45b13a)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f1d326aa-5030-4033-bc77-d66549e6c033)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3df1c69e-8c02-48ec-8d6e-9b92ee20b334)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/976a884c-5378-47fe-ac30-216fe6df45d5)
+
+
 ## Lab - Installing nginx using ansible playbook on the ubuntu ansible node containers
 In this lab exercise, we will do the following
 - install nginx in ubuntu ansible nodes
@@ -243,4 +256,30 @@ ansible-playbook -i inventory install-nginx-playbook.yml
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ac74c4b1-405e-4c64-8bc8-8759e58a429c)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7204919d-e943-47f7-809a-374f78d6e530)
-![Uploading image.png…]()
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c97b7894-98e5-4be9-9f8d-595f1d291c60)
+
+Copying the default nginx config file from ubuntu1 container to local directory
+```
+cd ~/devops-dec-2023
+cd Day3/ansible
+docker cp ubuntu1:/etc/nginx/sites-available/default .
+ls -l
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/38809e81-7eaa-452c-a3c0-e1b238823a1d)
+
+Running the updated playbook
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible-playbook -i inventory install-nginx-playbook.yml]
+curl http://localhost:8001
+curl http://localhost:8002
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b16cf14c-aa2e-40a5-99c1-ca4bc1109eac)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/af4eac2b-5f9f-493a-973b-1d40301d4caf)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f0774a0f-bca0-4ff2-ac53-da646c8c7ac7)
