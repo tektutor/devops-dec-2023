@@ -315,3 +315,18 @@ Things to Note
 
 Recommended reference
 https://jinja.palletsprojects.com/en/3.1.x/
+
+
+## Lab - Download jar from JFrog Artifactory server using Ansible playbook
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ls -l
+ansible-playbook download-artifacts-from-jfrog-artifactory-using-playbook.yml
+ls -l
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7d72cccb-639e-4fa5-9ed0-84ffb0deec07)
+
