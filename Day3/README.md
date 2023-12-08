@@ -292,3 +292,19 @@ Things to note
   - shell - used to execute any shell commands within the ansible nodes
   - copy - helps in copying files from local machine to ansible nodes and vice versa
   - setup - helps in collecting facts about ansible nodes
+
+## Lab - Using ansible template module to customize the html page 
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible-playbook -i inventory install-nginx-playbook-with-template-module.yml
+curl http://localhost:8001
+curl http://localhost:8002
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e50dc0b1-8e9f-4fa0-8d3f-e6057fbfeea3)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d09cc560-2e13-4d48-ae8b-acc59f1c70d0)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/9b549636-c890-4f06-a2d3-061edd2c2e6d)
+
