@@ -138,3 +138,14 @@ exit
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c99597f9-85f4-4192-8dd1-83615b6a7964)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d84533e2-d2ff-4988-80f6-1802a63c6931)
+
+## Lab - Running an ansible ad-hoc command using ping module
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible -i inventory all -m ping
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5f0df1f3-5094-4c3a-93b0-918ad4bf8a97)
