@@ -286,9 +286,9 @@ Expected output
 
 Things to note
 - So far we have used the below ansible modules
-  - ping
-  - apt
-  - file
-  - shell
-  - copy
-  - setup
+  - ping - helps test if ansible is able to communicate with the ansible nodes
+  - apt - helps in installing/uninstalling/updating/upgrading softwares in Ubuntu Linux distribution
+  - file - helps in create folders, files with specific permissions
+  - shell - used to execute any shell commands within the ansible nodes
+  - copy - helps in copying files from local machine to ansible nodes and vice versa
+  - setup - helps in collecting facts about ansible nodes
