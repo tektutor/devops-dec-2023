@@ -504,3 +504,4 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5201d1c9-54b9-48e3-b949-8eb656b42917)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/6b0f40ee-8fa4-47d5-a296-745958d3e150)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/20aecb90-ad15-4c55-b17d-d8fadde0a405)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a6e11c90-6a14-495b-b9ce-53918cc36595)
