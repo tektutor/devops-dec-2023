@@ -185,6 +185,11 @@ Expected output
 
 
 ## Lab - Installing nginx using ansible playbook on the ubuntu ansible node containers
+In this lab exercise, we will do the following
+- install nginx in ubuntu ansible nodes
+- configure nginx to pick html pages from our custom folder
+- deploy custom web page that has machine specific details
+
 ```
 cd ~/devops-dec-2023
 git pull
@@ -194,3 +199,48 @@ ansible-playbook -i inventory install-nginx-playbook.yml
 
 Expected outupt
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3235ef11-a461-4640-8f47-fdda5ec3d64d)
+
+Things to note
+- green color indicates the task was successfully executed but ansible didn't modify anything on the ansible node to make it successfuly
+- yellow color indicates, the task was successfully executed but ansible had to make some changes on the ansible node to make it successsful
+
+Understanding idempotency property of Ansible Configuration Management tool
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible-playbook -i inventory install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/db4f7bb7-15fd-4868-a49a-b575560eb5ba)
+
+Things to note
+- if we rerun the ansible playbook, it would report everything in green color, this is because ansible will first compare the current state of the machine with the desired state of the machine as expected in the playbook.  If there is deviation then ansible executes the task to match the actual state of the machine to desired machine state
+- if the machine's current state already matches with the desired then ansible will simply the task as success in green color without executing the task, this property is called Idempotency
+- the task with title "Gathering facts" is nothing but setup module which collects many facts about the ansible node.  This modules gets invoked as the first task in every play that appears in the playbook.
+
+We are not able to access the web page from nginx web server, as the nginx service wasn't started after installing. You could verify this by trying out the below commands
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible -i inventory ubuntu1 -m shell -a "service nginx status"
+ansible -i inventory ubuntu2 -m shell -a "service nginx status"
+```
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/38f32c35-03c0-4161-ade2-3d742823a2cd)
+
+Now let's run the updated ansible playbook to start the nginx web server using shell module
+
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible-playbook -i inventory install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ac74c4b1-405e-4c64-8bc8-8759e58a429c)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7204919d-e943-47f7-809a-374f78d6e530)
+![Uploading image.png…]()
