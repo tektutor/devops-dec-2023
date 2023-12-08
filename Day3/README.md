@@ -285,7 +285,7 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f0774a0f-bca0-4ff2-ac53-da646c8c7ac7)
 
 Things to note
-- So far we have used the below ansible nodes
+- So far we have used the below ansible modules
   - ping
   - apt
   - file
