@@ -1,4 +1,4 @@
-# Day3
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/47afb02d-1c3b-4025-8544-41bec5df81db)# Day3
 
 ## What is Configuration Management Tool?
 - a tool that supports automating administrative activies
@@ -442,3 +442,65 @@ ansible-vault decrypt jfrog-credentials.yml
 ansible-vault encrypt jfrog-credentials.yml
 ansible-vault rekey jfrog-credentials.yml
 ```
+
+## Lab - Creating centos1 and centos2 containers using our custom docker image
+```
+docker images
+docker run -d --name centos1 --hostname centos1 -p 2003:22 -p 8003:80 tektutor/ansible-centos-node:latest
+docker run -d --name centos2 --hostname centos2 -p 2004:22 -p 8004:80 tektutor/ansible-centos-node:latest
+docker ps
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/11293484-d46d-49c2-ba16-e83ea04cfdad)
+
+Testing if we are able to SSH into the centos1 and centos2 containers without supplying password
+```
+ssh -p 2003 root@localhost
+exit
+ssh -p 2003 root@localhost
+exit
+```
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8309c81c-c153-42e3-afb9-2a95e5d43327)
+
+## Lab - Ping the user-defined inventory groups
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+cat inventory
+ansible -i inventory dev -m ping
+ansible -i inventory qa -m ping
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/07a7bf24-aec5-4d9e-9d7b-24d17e5acc77)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f060f5f3-f541-4989-970e-c06a40e6dbdb)
+
+## Lab - Running the install nginx playbook on ubuntu1, ubuntu2, centos1 and centos2 ansible node containers
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+cat inventory
+ansible-playbook -i inventory install-nginx-playbook-with-template-module.yml
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/99402309-2c0f-4aa7-888c-4e201e33ffce)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/6aba8020-ce38-4d00-bfdf-729c3816183c)
+
+After addition conditional installation, let's execute the updated playbook
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+cat inventory
+cat install-nginx-playbook-with-template-module.yml
+ansible-playbook -i inventory install-nginx-playbook-with-template-module.yml
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5201d1c9-54b9-48e3-b949-8eb656b42917)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/6b0f40ee-8fa4-47d5-a296-745958d3e150)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/20aecb90-ad15-4c55-b17d-d8fadde0a405)
