@@ -489,3 +489,18 @@ ansible-playbook -i inventory install-nginx-playbook-with-template-module.yml
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/99402309-2c0f-4aa7-888c-4e201e33ffce)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/6aba8020-ce38-4d00-bfdf-729c3816183c)
+
+After addition conditional installation, let's execute the updated playbook
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+cat inventory
+cat install-nginx-playbook-with-template-module.yml
+ansible-playbook -i inventory install-nginx-playbook-with-template-module.yml
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5201d1c9-54b9-48e3-b949-8eb656b42917)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/6b0f40ee-8fa4-47d5-a296-745958d3e150)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/20aecb90-ad15-4c55-b17d-d8fadde0a405)
