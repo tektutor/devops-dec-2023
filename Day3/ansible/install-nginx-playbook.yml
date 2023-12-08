@@ -7,3 +7,16 @@
   - name: Start nginx web server in Ubuntu ansible node
     shell: service nginx start
 
+  - name: Create the custom web root folder
+    file: path=/var/html state=directory mode=0777
+
+  - name: Configure nginx web serve to serve web pages from our custom folder 
+    copy: src=default dest=/etc/nginx/sites-available/default
+
+  - name: Restart nginx web server in Ubuntu ansible node to apply the config changes
+    shell: service nginx restart
+
+  - name: Deploy custom web page into nginx web server on Ubuntu ansible node
+    copy: src=index.html dest=/var/html/index.html
+
+
