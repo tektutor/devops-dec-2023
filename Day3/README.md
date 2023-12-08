@@ -99,3 +99,18 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3372882e-4346-4818-8fb7-9492fb185a79)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/2cbbf8d1-1639-402c-b143-dcdfda0e62a7)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/cb75a391-0cc0-4890-8a64-3d47ff6f7132)
+
+## Lab - Creating a Custom CentOS ansible node docker image
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible/CustomDockerImages/centos
+cp ~/.ssh/id_rsa.pub authorized_keys
+ls
+docker build -t tektutor/ansible-centos-node:latest .
+docker images
+```
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7366926f-32f0-4d8a-af46-67cea78919a1)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7d4c9fdc-67dd-4f9e-904e-1b894c84c8b4)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/067f3f84-cc7e-466a-9f87-711cc310d64a)
