@@ -274,9 +274,12 @@ Running the updated playbook
 cd ~/devops-dec-2023
 git pull
 cd Day3/ansible
-ansible-playbook -i inventory install-nginx-playbook.yml
+ansible-playbook -i inventory install-nginx-playbook.yml]
+curl http://localhost:8001
+curl http://localhost:8002
 ```
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b16cf14c-aa2e-40a5-99c1-ca4bc1109eac)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/af4eac2b-5f9f-493a-973b-1d40301d4caf)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f0774a0f-bca0-4ff2-ac53-da646c8c7ac7)
