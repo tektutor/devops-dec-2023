@@ -185,6 +185,11 @@ Expected output
 
 
 ## Lab - Installing nginx using ansible playbook on the ubuntu ansible node containers
+In this lab exercise, we will do the following
+- install nginx in ubuntu ansible nodes
+- configure nginx to pick html pages from our custom folder
+- deploy custom web page that has machine specific details
+
 ```
 cd ~/devops-dec-2023
 git pull
