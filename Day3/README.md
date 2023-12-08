@@ -308,3 +308,10 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d09cc560-2e13-4d48-ae8b-acc59f1c70d0)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/9b549636-c890-4f06-a2d3-061edd2c2e6d)
 
+Things to Note
+- In this lab exercise, we learned how we could use template module to customize the index.html page with variables
+- Using template modules makes the html page dynamic as it is configures with machine specific details
+- Ansible template modules internally uses Jinja2 python library
+
+Recommended reference
+https://jinja.palletsprojects.com/en/3.1.x/
