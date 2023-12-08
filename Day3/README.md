@@ -63,6 +63,26 @@
 - this helps in software installation and configuration automation
 - it would be invoked one or more Ansible Modules in a specific order one after the other
 
+## Lab - Finding the ansible version
+```
+ansible --version
+```
+
+Expected output
+<pre>
+┌──(jegan㉿tektutor.org)-[~/devops-dec-2023]
+└─$ ansible --version 
+ansible [core 2.14.9]
+  config file = None
+  configured module search path = ['/home/jegan/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/jegan/.ansible/collections:/usr/share/ansible/collections
+  executable location = /bin/ansible
+  python version = 3.11.2 (main, Mar 13 2023, 12:18:29) [GCC 12.2.0] (/usr/bin/python3)
+  jinja version = 3.1.2
+  libyaml = True
+</pre>
+
 ## Lab - Creating a Custom Ubuntu Ansible node docker image
 ```
 cd ~/devops-dec-2023
