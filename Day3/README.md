@@ -199,3 +199,7 @@ ansible-playbook -i inventory install-nginx-playbook.yml
 
 Expected outupt
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3235ef11-a461-4640-8f47-fdda5ec3d64d)
+
+Things to note
+- green color indicates the task was successfully executed but ansible didn't modify anything on the ansible node to make it successfuly
+- yellow color indicates, the task was successfully executed but ansible had to make some changes on the ansible node to make it successsful
