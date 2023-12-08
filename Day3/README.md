@@ -203,3 +203,18 @@ Expected outupt
 Things to note
 - green color indicates the task was successfully executed but ansible didn't modify anything on the ansible node to make it successfuly
 - yellow color indicates, the task was successfully executed but ansible had to make some changes on the ansible node to make it successsful
+
+Understanding idempotency property of Ansible Configuration Management tool
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible-playbook -i inventory install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/db4f7bb7-15fd-4868-a49a-b575560eb5ba)
+
+Things to note
+- if we rerun the ansible playbook, it would report everything in green color, this is because ansible will first compare the current state of the machine with the desired state of the machine as expected in the playbook.  If there is deviation then ansible executes the task to match the actual state of the machine to desired machine state
+- if the machine's current state already matches with the desired then ansible will simply the task as success in green color without executing the task, this property is called Idempotency
