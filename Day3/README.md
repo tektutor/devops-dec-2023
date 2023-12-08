@@ -171,3 +171,14 @@ ansible -i inventory all -m setup | grep python
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/008cf760-d3ce-44f7-90da-784ad06c10c1)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f85862ef-17a9-4042-bbba-510d0edbfda7)
+
+## Lab - Running your first ansible playbook
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible-playbook -i inventory ping-playbook.yml
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1ce9114b-8d79-4fdb-88a1-5ca9935a9e42)
