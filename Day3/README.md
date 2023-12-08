@@ -220,6 +220,14 @@ Things to note
 - if the machine's current state already matches with the desired then ansible will simply the task as success in green color without executing the task, this property is called Idempotency
 - the task with title "Gathering facts" is nothing but setup module which collects many facts about the ansible node.  This modules gets invoked as the first task in every play that appears in the playbook.
 
-We are not able to access the web page from nginx web server, as the nginx service wasn't started after installing
+We are not able to access the web page from nginx web server, as the nginx service wasn't started after installing. You could verify this by trying out the below commands
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible -i inventory ubuntu1 -m shell -a "service nginx status"
+ansible -i inventory ubuntu2 -m shell -a "service nginx status"
+```
+Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/38f32c35-03c0-4161-ade2-3d742823a2cd)
 
