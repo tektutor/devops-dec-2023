@@ -125,3 +125,16 @@ docker ps
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f697a439-9bd1-49dd-b562-d6037d12e957)
+
+
+## Lab - Testing the ubuntu1 and ubuntu2 ansible node containers for ssh connectivity with a key-based login authentication
+```
+ssh -p 2001 root@localhost
+exit
+ssh -p 2002 root@localhost
+exit
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c99597f9-85f4-4192-8dd1-83615b6a7964)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d84533e2-d2ff-4988-80f6-1802a63c6931)
