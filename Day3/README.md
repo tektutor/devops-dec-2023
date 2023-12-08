@@ -283,3 +283,12 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b16cf14c-aa2e-40a5-99c1-ca4bc1109eac)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/af4eac2b-5f9f-493a-973b-1d40301d4caf)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f0774a0f-bca0-4ff2-ac53-da646c8c7ac7)
+
+Things to note
+- So far we have used the below ansible modules
+  - ping - helps test if ansible is able to communicate with the ansible nodes
+  - apt - helps in installing/uninstalling/updating/upgrading softwares in Ubuntu Linux distribution
+  - file - helps in create folders, files with specific permissions
+  - shell - used to execute any shell commands within the ansible nodes
+  - copy - helps in copying files from local machine to ansible nodes and vice versa
+  - setup - helps in collecting facts about ansible nodes
