@@ -29,9 +29,6 @@ OS name: "linux", version: "6.4.0-kali3-amd64", arch: "amd64", family: "unix"
     - it is a fail-fast meeting
     - inspect plan & adapt meeting
 
-## SCRUM vs Waterfall
-
-
 ## What is DevOps?
 - fail-fast engineering process that helps catch the defects as soon as it is injected/introduced into code
 - projects that follow Devops, the team members would be committing the source code several times a day
