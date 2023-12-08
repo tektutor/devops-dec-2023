@@ -62,3 +62,19 @@
 - is the automation script written in YAML file
 - this helps in software installation and configuration automation
 - it would be invoked one or more Ansible Modules in a specific order one after the other
+
+## Lab - Creating a Custom Ubuntu Ansible node docker image
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible/CustomDockerImages/ubuntu
+ssh-keygen
+cp ~/.ssh/id_rsa.pub authorized_keys
+ls
+docker build -t tektutor/ansible-ubuntu-node:latest .
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3372882e-4346-4818-8fb7-9492fb185a79)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/2cbbf8d1-1639-402c-b143-dcdfda0e62a7)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/cb75a391-0cc0-4890-8a64-3d47ff6f7132)
