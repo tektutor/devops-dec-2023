@@ -40,7 +40,13 @@
   - Ansible AWX ( open source, supports Web Interface, developed on top Ansible Core )
   - Red Hat Ansible Tower ( Requires license, developed on top of Ansible AWX )
 - follows PUSH based architecture
-
+- very easy to learn and install
+- follows a very simple architecture
+- developed by Michael Deehan
+- Michael Deehan is former employee of Red Hat, after quitting Red Hat he started a company called Ansible Inc
+- Ansible core was developed as an open source product
+- Once Ansible Core gained popularity, Red Hat acquired Ansible Inc, hence Ansible is a Red Hat product
+- Later, IBM acquired Red Hat, hence it is an IBM product
 ## What are the Ansible Alternatives
 - Puppet
 - Chef and
