@@ -318,6 +318,29 @@ https://jinja.palletsprojects.com/en/3.1.x/
 
 
 ## Lab - Download jar from JFrog Artifactory server using Ansible playbook
+Just in case, your JFrog Artifactory container is not running, you need to create it as shown below
+```
+docker run -d --name jfrog --hostname jfrog -p 8081-8082:8081-8082 releases-docker.jfrog.io/jfrog/artifactory-oss:latest
+docker ps
+```
+
+You can access the JFrog Artifactory from your RPS Lab web browser
+```
+http://localhost:8081
+```
+You need to change the password to 'Rps@12345' without quotes.
+
+
+Then you need to deploy the application jars as shown below
+```
+cd ~/devops-dec-2023
+git pull
+cd Day1/multi-module-project
+mvn deploy
+mvn clean
+```
+
+Now you can procceed as shown below
 ```
 cd ~/devops-dec-2023
 git pull
