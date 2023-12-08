@@ -378,3 +378,20 @@ Create a new project ( GitHub Integration )
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7e02fb11-142e-45ed-9238-d4f6b1752006)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/cfc793e9-9760-4d8d-8948-74b9e8a4c17b)
 
+We need to add a new credential and paste the private key we created in the RPS machine and save it.
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1dec1250-594d-453b-a9f2-6390886643d9)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/65bed279-1a00-4685-b9aa-83ff4ffb1c1b)
+
+We need to create an inventory
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/9978556a-570c-4886-adf6-041aff733df9)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/453bdd11-9fc6-4c3d-9712-528214c7976a)
+
+We need to create a Job Template to configure and run an Ansible Playbook within Ansible Tower
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f8cde36d-3363-4e90-a821-6f02931df5c2)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/2401fcd1-9166-4d5f-92c2-da0588c16932)
+
+We need to launch the Job to run the Ansible Playbook
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/9c544c2c-185a-4ba0-a9c2-543fc951fc7c)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/577f794f-9ead-4068-80e3-7daae8053dbf)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/05b4c8cc-b2ec-4683-b6d8-a61f47b19b31)
+
