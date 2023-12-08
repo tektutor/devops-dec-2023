@@ -184,6 +184,19 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1ce9114b-8d79-4fdb-88a1-5ca9935a9e42)
 
 
+## Lab - Getting ansible help about any ansible module
+To exit the exit, type letter 'q' without quotes
+```
+ansible-doc file
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/fc9a7b90-dc87-4054-88c4-5a058e45b13a)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f1d326aa-5030-4033-bc77-d66549e6c033)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3df1c69e-8c02-48ec-8d6e-9b92ee20b334)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/976a884c-5378-47fe-ac30-216fe6df45d5)
+
+
 ## Lab - Installing nginx using ansible playbook on the ubuntu ansible node containers
 In this lab exercise, we will do the following
 - install nginx in ubuntu ansible nodes
