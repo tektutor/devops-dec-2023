@@ -358,7 +358,9 @@ Expected output
 cd ~/devops-dec-2023
 git pull
 cd Day3/ansible
+curl http://localhost:8001
 ansible-playbook install-nginx-playbook-with-template-module.yml -e greeting_msg=Welcome
+curl http://localhost:8001
 ```
 
 Expected output
