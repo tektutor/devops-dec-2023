@@ -9,6 +9,14 @@
     when: ansible_distribution == "Ubuntu"
     apt: name=nginx state=latest update_cache=yes
 
+  - name: Install Extra Packages for Enterprise Linux (EPEL) in CentOS ansible node
+    when: ansible_distribution == "CentOS"
+    yum: name=epel-release state=latest 
+
+  - name: Install nginx in CentOS ansible node
+    when: ansible_distribution == "CentOS"
+    yum: name=nginx state=latest 
+
   - name: Start nginx web server in Ubuntu ansible node
     when: ansible_distribution == "Ubuntu"
     shell: service nginx start
@@ -20,9 +28,25 @@
     when: ansible_distribution == "Ubuntu"
     copy: src=default dest=/etc/nginx/sites-available/default
 
+  - name: Configure nginx web serve to serve web pages from our custom folder in Ubuntu ansible node
+    when: ansible_distribution == "CentOS"
+    copy: src=nginx.conf dest=/etc/nginx/nginx.conf
+
   - name: Restart nginx web server in Ubuntu ansible node to apply the config changes
     when: ansible_distribution == "Ubuntu"
     shell: service nginx restart
+
+  - name: Check if nginx web server is already running in CentOS ansible node
+    when: ansible_distribution == "CentOS"
+    shell: curl localhost 
+    register: output
+
+  - debug: var=output
+
+  - name: Restart nginx web server in Ubuntu ansible node to apply the config changes
+    when: ( ansible_distribution == "CentOS" and output.rc != 0 )
+    shell: nginx
+
 
   - name: Retrieve IP address of the ansible node
     shell: hostname -i
