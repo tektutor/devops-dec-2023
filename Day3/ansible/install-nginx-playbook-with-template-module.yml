@@ -24,7 +24,7 @@
     shell: hostname -i
     register: ip_address
 
-  - debug: var=ip_address
+  - debug: var=ip_address verbosity=4
 
   - name: Deploy custom web page into nginx web server on Ubuntu ansible node
     template: src=index.html.j2 dest=/var/html/index.html
