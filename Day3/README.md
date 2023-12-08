@@ -92,6 +92,7 @@ ssh-keygen
 cp ~/.ssh/id_rsa.pub authorized_keys
 ls
 docker build -t tektutor/ansible-ubuntu-node:latest .
+docker images
 ```
 
 Expected output
