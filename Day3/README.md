@@ -250,7 +250,7 @@ Copying the default nginx config file from ubuntu1 container to local directory
 cd ~/devops-dec-2023
 cd Day3/ansible
 docker cp ubuntu1:/etc/nginx/sites-available/default .
-ls
+ls -l
 ```
 
 Expected output
