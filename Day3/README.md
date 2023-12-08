@@ -182,3 +182,15 @@ ansible-playbook -i inventory ping-playbook.yml
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1ce9114b-8d79-4fdb-88a1-5ca9935a9e42)
+
+
+## Lab - Installing nginx using ansible playbook on the ubuntu ansible node containers
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible-playbook -i inventory install-nginx-playbook.yml
+```
+
+Expected outupt
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3235ef11-a461-4640-8f47-fdda5ec3d64d)
