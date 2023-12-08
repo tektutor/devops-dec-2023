@@ -114,3 +114,38 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7366926f-32f0-4d8a-af46-67cea78919a1)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7d4c9fdc-67dd-4f9e-904e-1b894c84c8b4)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/067f3f84-cc7e-466a-9f87-711cc310d64a)
+
+## Lab - Creating two containers using our custom ubuntu ansible node
+```
+docker images
+docker run -dit --name ubuntu1 --hostname ubuntu1 -p 2001:22 -p 8001:80 tektutor/ansible-ubuntu-node:latest
+docker run -dit --name ubuntu2 --hostname ubuntu2 -p 2002:22 -p 8002:80 tektutor/ansible-ubuntu-node:latest
+docker ps
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f697a439-9bd1-49dd-b562-d6037d12e957)
+
+
+## Lab - Testing the ubuntu1 and ubuntu2 ansible node containers for ssh connectivity with a key-based login authentication
+```
+ssh -p 2001 root@localhost
+exit
+ssh -p 2002 root@localhost
+exit
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c99597f9-85f4-4192-8dd1-83615b6a7964)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d84533e2-d2ff-4988-80f6-1802a63c6931)
+
+## Lab - Running an ansible ad-hoc command using ping module
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible -i inventory all -m ping
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5f0df1f3-5094-4c3a-93b0-918ad4bf8a97)
