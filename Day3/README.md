@@ -219,3 +219,7 @@ Things to note
 - if we rerun the ansible playbook, it would report everything in green color, this is because ansible will first compare the current state of the machine with the desired state of the machine as expected in the playbook.  If there is deviation then ansible executes the task to match the actual state of the machine to desired machine state
 - if the machine's current state already matches with the desired then ansible will simply the task as success in green color without executing the task, this property is called Idempotency
 - the task with title "Gathering facts" is nothing but setup module which collects many facts about the ansible node.  This modules gets invoked as the first task in every play that appears in the playbook.
+
+We are not able to access the web page from nginx web server, as the nginx service wasn't started after installing
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/38f32c35-03c0-4161-ade2-3d742823a2cd)
+
