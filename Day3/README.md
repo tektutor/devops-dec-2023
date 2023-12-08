@@ -415,3 +415,16 @@ cat jfrog-credentials.yml
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ed6cecb4-3cd3-4715-8948-34f324f45291)
 
+
+Now, let's use the jfrog-crentials which is ansible vault protected in our ansible playbook, when prompts for password type 'RpsW12345' without quotes.
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible-playbook download-artifacts-from-jfrog-artifactory-using-playbook-with-vault.yml
+cat jfrog-credentials.yml
+ansible-playbook download-artifacts-from-jfrog-artifactory-using-playbook-with-vault.yml --ask-vault-pass
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d63dd21e-cd0a-4cd0-82aa-ce789adef0cb)
