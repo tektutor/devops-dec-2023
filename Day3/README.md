@@ -149,3 +149,20 @@ ansible -i inventory all -m ping
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5f0df1f3-5094-4c3a-93b0-918ad4bf8a97)
+
+
+## Lab - Ansible ad-hoc command to retrieve facts about the ansible nodes using setup ansible module
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible -i inventory all -m setup
+ansible -i inventory all -m setup | grep ansible_distribution
+ansible -i inventory all -m setup | grep ansible_os_family
+ansible -i inventory all -m setup | grep ansible_pkg
+ansible -i inventory all -m setup | grep python
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/008cf760-d3ce-44f7-90da-784ad06c10c1)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f85862ef-17a9-4042-bbba-510d0edbfda7)
