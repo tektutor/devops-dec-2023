@@ -218,3 +218,4 @@ Expected output
 Things to note
 - if we rerun the ansible playbook, it would report everything in green color, this is because ansible will first compare the current state of the machine with the desired state of the machine as expected in the playbook.  If there is deviation then ansible executes the task to match the actual state of the machine to desired machine state
 - if the machine's current state already matches with the desired then ansible will simply the task as success in green color without executing the task, this property is called Idempotency
+- the task with title "Gathering facts" is nothing but setup module which collects many facts about the ansible node.  This modules gets invoked as the first task in every play that appears in the playbook.
