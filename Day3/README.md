@@ -476,3 +476,16 @@ ansible -i inventory qa -m ping
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/07a7bf24-aec5-4d9e-9d7b-24d17e5acc77)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f060f5f3-f541-4989-970e-c06a40e6dbdb)
+
+## Lab - Running the install nginx playbook on ubuntu1, ubuntu2, centos1 and centos2 ansible node containers
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+cat inventory
+ansible-playbook -i inventory install-nginx-playbook-with-template-module.yml
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/99402309-2c0f-4aa7-888c-4e201e33ffce)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/6aba8020-ce38-4d00-bfdf-729c3816183c)
