@@ -268,3 +268,15 @@ ls -l
 
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/38809e81-7eaa-452c-a3c0-e1b238823a1d)
+
+Running the updated playbook
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible-playbook -i inventory install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b16cf14c-aa2e-40a5-99c1-ca4bc1109eac)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/af4eac2b-5f9f-493a-973b-1d40301d4caf)
