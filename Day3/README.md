@@ -353,3 +353,16 @@ ls -l
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7d72cccb-639e-4fa5-9ed0-84ffb0deec07)
 
+## Lab - Passing extra variables to ansible playbook
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible-playbook install-nginx-playbook-with-template-module.yml -e greeting_msg=Welcome
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c8c01767-2392-4df1-b3a8-2c0770ecf2be)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/11d80062-36ee-4f2c-9369-b73f332576cb)
+
+
