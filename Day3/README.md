@@ -245,3 +245,13 @@ Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7204919d-e943-47f7-809a-374f78d6e530)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c97b7894-98e5-4be9-9f8d-595f1d291c60)
 
+Copying the default nginx config file from ubuntu1 container to local directory
+```
+cd ~/devops-dec-2023
+cd Day3/ansible
+docker cp ubuntu1:/etc/nginx/sites-available/default .
+ls
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/38809e81-7eaa-452c-a3c0-e1b238823a1d)
