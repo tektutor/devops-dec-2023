@@ -1,0 +1,6 @@
+- name: This playbook will install nginx, configures nginx to pick html from custom directory and deploy custom html web page
+  hosts: all
+  tasks:
+  - name: Install nginx in Ubuntu ansible node
+    apt: name=nginx state=latest update_cache=yes
+
