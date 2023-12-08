@@ -383,6 +383,9 @@ We need to add a new credential and paste the private key we created in the RPS 
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/65bed279-1a00-4685-b9aa-83ff4ffb1c1b)
 
 We need to create an inventory
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1b097adc-28b2-469e-b65a-9394c3a2c1b3)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3fa354af-4a56-4835-90f7-7f2fdb54b15f)
+
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/9978556a-570c-4886-adf6-041aff733df9)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/453bdd11-9fc6-4c3d-9712-528214c7976a)
 
