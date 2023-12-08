@@ -231,3 +231,16 @@ ansible -i inventory ubuntu2 -m shell -a "service nginx status"
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/38f32c35-03c0-4161-ade2-3d742823a2cd)
 
+Now let's run the updated ansible playbook to start the nginx web server using shell module
+
+```
+cd ~/devops-dec-2023
+git pull
+cd Day3/ansible
+ansible-playbook -i inventory install-nginx-playbook.yml
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ac74c4b1-405e-4c64-8bc8-8759e58a429c)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7204919d-e943-47f7-809a-374f78d6e530)
+![Uploading image.png…]()
