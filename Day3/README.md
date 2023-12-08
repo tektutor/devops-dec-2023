@@ -53,6 +53,11 @@
 - Chef and
 - Salt
 
+## What is an Ansible ad-hoc command?
+- through ansible ad-hoc commands, we call one ansible module at a time
+- generally used for poc or as a support tool
+- for complex automations, we need use Ansible Playbook
+
 ## What is an Ansible Playbook?
 - is the automation script written in YAML file
 - this helps in software installation and configuration automation
