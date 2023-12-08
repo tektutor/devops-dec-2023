@@ -27,7 +27,7 @@
 - In the Puppet/Chef nodes we need to install some Puppet/Chef agents
 - The agents will periodically connects to the Puppet/Chef servers looking for new automation scripts or any updates in existing scripting
 - When the agents find a new/updated script, it pulls the scripts and runs on the Puppet/Chef agents
-- follows Pull architecture
+- follows Pull based architecture
   
 ## Why Ansible?
 - agentless
@@ -39,6 +39,7 @@
   - Ansible Core ( open source, supports only command-line )
   - Ansible AWX ( open source, supports Web Interface, developed on top Ansible Core )
   - Red Hat Ansible Tower ( Requires license, developed on top of Ansible AWX )
+- follows PUSH based architecture
 
 ## What are the Ansible Alternatives
 - Puppet
