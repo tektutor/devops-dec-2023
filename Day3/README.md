@@ -401,7 +401,7 @@ We need to launch the Job to run the Ansible Playbook
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/577f794f-9ead-4068-80e3-7daae8053dbf)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/05b4c8cc-b2ec-4683-b6d8-a61f47b19b31)
 
-## Lab - Using Ansible vault to protect the sensitive data like login credentials
+## Lab - Using Ansible vault to protect sensitive data like login credentials
 
 When prompts for password, type 'Rps@12345' without quotes.
 ```
