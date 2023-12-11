@@ -387,3 +387,4 @@ Make sure, you saved it.
 
 Build status shows as below
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e82a419a-b6ac-417e-a815-d8e0e431c3c2)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/bf89d37a-fca3-4c62-8cb2-e9c6f30084f0)
