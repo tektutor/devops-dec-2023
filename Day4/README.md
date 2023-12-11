@@ -3,7 +3,7 @@
 ## Launching Jenkins Build Server
 ```
 cd ~/Downloads
-java -jar ./jenkins.war
+java -jar ./jenkins.war --enable-future-java
 ```
 
 Expected output
