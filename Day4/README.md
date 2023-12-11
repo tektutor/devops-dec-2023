@@ -181,7 +181,16 @@ Click on "Save" button
 For navigate to jenkins Dashboard
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5bdc97b0-eb92-4c1d-9301-3fdffb730c49)
 
-Click on "Create a Job"
+Click on "Create a Job" and select Maven style job
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d9988609-5f45-49ab-9e2f-1e0ff6538292)
 
+General section
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/514a77e1-f2a3-4688-96cc-5137f7c69940)
+
+Source Code Management
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b5760820-e59b-462a-b2e8-3e8492db3429)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/20214af1-d976-4f3b-8535-e34ceffe7338)
+
+Build Triggers
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/4d595db9-fba1-4e5e-b0ba-0c34ac2528fc)
 
