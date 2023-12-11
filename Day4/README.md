@@ -217,3 +217,13 @@ Jenkins workspace folder
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a2e6fc76-8055-44a2-8018-222870ba629d)
 
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/138d945c-36e0-4ea2-b24a-c5b113ad9993)
+
+
+## Lab - Creating a Free style job in Jenkins
+
+From Jenkins Dashboard, click on "New Item" menu on the left side
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/fe2b8a93-b3e6-4829-afdb-81da65ddec26)
+
+Click on Ok
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8294821f-8fb5-49a3-8b00-ed72225398d9)
+
