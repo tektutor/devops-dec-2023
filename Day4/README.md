@@ -289,5 +289,9 @@ Type "secret text" as "root@123" without quotes as the Vault password to decrypt
 Click on "Add" button to save the vault credentials in Jenkins
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/fe3d02d1-fa88-49c8-ad6c-688577d30eef)
 
+Select the Ansible vault credential we just now saved
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/94a109a6-e136-4899-9a7c-aa717b475b98)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e403ee5a-ae45-4d61-ac67-18d048d9713d)
 
+Click on Save button to save the Jenkins job configurations done.
 
