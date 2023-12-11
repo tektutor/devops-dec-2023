@@ -240,3 +240,5 @@ Build Triggers
 
 Build Steps
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7445dc43-72d4-4507-a21d-ded6fd8be112)
+Select "Execute Shell"
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/319a83a8-a623-48bf-b724-0382e4faf34b)
