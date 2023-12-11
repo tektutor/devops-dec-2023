@@ -247,3 +247,10 @@ Select "Execute Shell"
 
 Click on Save button
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/0a7ef558-f970-494d-86e7-a471373b9396)
+
+Build History
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/6600ac5a-78ef-4028-8e77-92fe0269ec1b)
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e7f17d22-7a20-446b-9cdb-eb38bb2a875c)
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c1a83b8d-ff0a-4932-81e3-8d266156268e)
