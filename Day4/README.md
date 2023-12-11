@@ -175,3 +175,9 @@ Click on "Save" button
 - Team City
 - Cloudbees
 - Microsoft Team Foundation Server (TFS)
+
+## Lab - Creating a Maven Jenkins Job to setup CI for one of our Maven project
+
+For navigate to jenkins Dashboard
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5bdc97b0-eb92-4c1d-9301-3fdffb730c49)
+
