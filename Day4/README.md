@@ -384,3 +384,6 @@ The HelloFreeStyle Job General section must be configured as shown below
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a38ec59d-bcf4-441c-a9ee-29f2b634ac17)
 
 Make sure, you saved it.
+
+Build status shows as below
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e82a419a-b6ac-417e-a815-d8e0e431c3c2)
