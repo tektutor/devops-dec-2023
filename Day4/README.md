@@ -357,3 +357,15 @@ Click on "Add Docker Template"
 ![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/7bab6d71-76b8-4207-91e5-44ae4f26e6af)
 ![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/d865166d-c504-4a05-afb7-24a15bb625b2)
 Click on "Save" button
+
+## Lab - Building a Custom Docker Image to use it in your Jenkins Docker cloud configuration
+```
+cd ~/devops-dec-2023
+git pull
+cd Day4/CustomDockerImages
+docker build -t tektutor/maven:latest .
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d381defb-cdb8-410c-a67e-aac6ff62d1f9)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a9e0bbc7-4411-4fad-b51e-d642fb8079b1)
