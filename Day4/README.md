@@ -194,3 +194,6 @@ Source Code Management
 Build Triggers
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/4d595db9-fba1-4e5e-b0ba-0c34ac2528fc)
 
+Build
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ac8fa6c4-6ad5-40b0-a283-43b7d4aa74cf)
+
