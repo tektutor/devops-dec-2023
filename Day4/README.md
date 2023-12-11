@@ -254,3 +254,26 @@ Build History
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e7f17d22-7a20-446b-9cdb-eb38bb2a875c)
 
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c1a83b8d-ff0a-4932-81e3-8d266156268e)
+
+## Lab - Invoking Ansible Playbook from Jenkins based on Code commit in GitHub(CI)
+Navigate to Jenkins Dashboard
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b4a5e6c0-8575-4106-a67b-e03814916dad)
+
+Click on "New Item" on the left side menu (Free style job)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5d92aff9-644b-461f-81dd-56e39ea8d11e)
+Click on "Ok" button
+
+General Section
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b58f9720-b6b8-4855-848f-a3a52cf3281a)
+
+Source Code Management
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8f35364e-9f3d-4938-9250-e84906511cc4)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/bd770844-c60c-42fd-925a-bfb1dda275d2)
+
+Build Triggers
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/51c83573-4307-4353-ac2f-de416cbfe842)
+
+Buid Steps
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e6fd54e8-3950-49e6-bb5c-3a83497c2831)
+Add Build Step --> Select "Invoke Ansible Playbook"
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/9efbb4c9-4bc4-49a7-beed-072c892b52fd)
