@@ -215,3 +215,5 @@ Jenkins workspace folder
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/30cc259f-585a-4f47-ba04-994caf787648)
 
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a2e6fc76-8055-44a2-8018-222870ba629d)
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/138d945c-36e0-4ea2-b24a-c5b113ad9993)
