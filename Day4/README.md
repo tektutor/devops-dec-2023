@@ -209,4 +209,9 @@ Build History ( within 2 minutes it will automatically start the build )
 
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/cf86de63-83cb-4d26-a381-862cdd433b72)
 
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5900f699-9aa4-496e-9a05-5f8ff44b66b0)
 
+Jenkins workspace folder
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/30cc259f-585a-4f47-ba04-994caf787648)
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a2e6fc76-8055-44a2-8018-222870ba629d)
