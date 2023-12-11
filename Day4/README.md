@@ -369,3 +369,18 @@ docker build -t tektutor/maven:latest .
 Expected output
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d381defb-cdb8-410c-a67e-aac6ff62d1f9)
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a9e0bbc7-4411-4fad-b51e-d642fb8079b1)
+
+
+## Lab - Configuring HelloFreeStyle Job to delete the build onto docker container
+
+1. Whenever code is commited to TekTutor GitHub repository devops-dec-2023, the Jenkins built-in node will trigger the FreeStyleJob Jenkins job.
+2. Since the FreeStyleJob is configured to run on a docker container based 'docker-slave' label configuration, Jenkins slave will request the Jenkins built-in node for a container.
+3. Jenkins built-in node then will request the Docker Server to create container using tektutor/maven:latest image
+4. Once Jenkins built-in(master) node gets a notification from Docker server that it has created the required container, Jenkins master node will then notify the Jenkins Free Style job to run in the newly provisioned docker container.
+5. Once the build starts within the container, Jenkins slave ( remoting.jar ) within the container will clone the GitHub repo https://github.com/tektutor/devops-dec-2023.git and then it will build the maven job.
+6. Jenkins master node will keep monitoring the status of the build and it gives the build report on the master node in a convenient way.
+
+The HelloFreeStyle Job General section must be configured as shown below
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/a38ec59d-bcf4-441c-a9ee-29f2b634ac17)
+
+Make sure, you saved it.
