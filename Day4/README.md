@@ -283,3 +283,8 @@ Under Build Steps -> Vault Credentials section
 Click on Add option by clicking the "+" symbol
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b543cb67-7d0b-4bfb-b269-cf18ebb49ba7)
 click on "Jenkins"
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/4fcff613-77a5-41c7-aa57-734e7adb8ffc)
+Type "secret text" as "root@123" without quotes as the Vault password to decrypt and access the Ansible vault protected data.
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/99927f9e-55af-4409-adb0-c3d54f9a4e24)
+
+
