@@ -295,3 +295,65 @@ Select the Ansible vault credential we just now saved
 
 Click on Save button to save the Jenkins job configurations done.
 
+## Lab - Configure Docker plugin to provision a jenkins slave container on demand
+Let's navigate to "Manage Jenkins --> Clouds"
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/2857782b-fcd3-47e8-945a-0cbc9a10f378)
+
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/2c450939-4174-406c-be3d-aa09d916c285)
+Click on "New cloud"
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/9480899e-69e4-4fde-814b-678b68ff75fb)
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/2cc19341-116c-41af-bd74-dbe3964d5cda)
+Click on "Create" button
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/b3886349-929b-4a14-9d93-db905f66dfc3)
+
+Click on "Docker cloud details"
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/18e58194-8a83-4758-93a9-6bd8d93099d9)
+
+We need to configure the Docker Service to support REST API access for remote docker clients and for third-party application like Jenkins to interact with Docker service.
+
+Let's launch the ubuntu terminal and type the below command
+```
+sudo systemctl status docker
+```
+Expected output
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/734f1981-0b84-4788-a050-29bf8f38ab99)
+
+From the above screen, you may copy the path of docker service configuration file
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/eb0fc832-5e90-480f-95b1-b82900831bf5)
+
+Then, let's edit the file /lib/systemd/system/docker.service as an administrator
+```
+sudo vim /lib/systemd/system/docker.service
+```
+In the above file at line number 14 we need to append the below string
+```
+-H tcp://0.0.0.0:4243
+```
+Once the above string is appended it should look as shown below
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/e0e406da-8636-423f-bf39-d5be6034c0b5)
+
+To apply the service configuration changes, we need to restart the docker service 
+```
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+sudo sytemctl status docker
+```
+Expected output
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/27fa0696-d1d8-4b3e-8ee5-60e8675867d5)
+
+Now you may proceed with Jenkins configuration
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/2bc64d11-899a-4cd4-83ee-5e790ed4ba77)
+
+Let's test if Jenkins is able to communicate with Docker Server by clicking on "Test Connection" button
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/dfbb9d70-9f78-4575-bd1b-c2f04edd564e)
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/8ecee7fa-bc36-4e08-be3b-a80bee973fee)
+
+Let's click on "Docker Agent Templates"
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/85037954-d1b6-4390-9dfa-b26f766d0a3b)
+Click on "Add Docker Template"
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/e013bc89-e6c4-45e2-bbe8-190e8735061d)
+
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/f33f37cf-0506-40fe-ac15-448618f55ac1)
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/7bab6d71-76b8-4207-91e5-44ae4f26e6af)
+![image](https://github.com/tektutor/devops-nov-2023/assets/12674043/d865166d-c504-4a05-afb7-24a15bb625b2)
+Click on "Save" button
