@@ -227,3 +227,16 @@ From Jenkins Dashboard, click on "New Item" menu on the left side
 Click on Ok
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/8294821f-8fb5-49a3-8b00-ed72225398d9)
 
+General section
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e49449ab-c806-4ec0-9443-fe4126fa4d9f)
+
+Soure Code Management
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/60ce7742-957f-4ead-94b2-50d51d4acfca)
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/ab690175-d056-4c5c-8147-03be8a7799ed)
+
+Build Triggers
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d96e365f-4447-4aca-ab84-3d1ac70c352c)
+
+Build Steps
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7445dc43-72d4-4507-a21d-ded6fd8be112)
