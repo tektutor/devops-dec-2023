@@ -273,7 +273,13 @@ Source Code Management
 Build Triggers
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/51c83573-4307-4353-ac2f-de416cbfe842)
 
-Buid Steps
+Build Steps
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e6fd54e8-3950-49e6-bb5c-3a83497c2831)
 Add Build Step --> Select "Invoke Ansible Playbook"
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/9efbb4c9-4bc4-49a7-beed-072c892b52fd)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/fcc536c9-f8c3-4d98-bb68-59185fbafb90)
+
+Under Build Steps -> Vault Credentials section
+Click on Add option by clicking the "+" symbol
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/b543cb67-7d0b-4bfb-b269-cf18ebb49ba7)
+click on "Jenkins"
