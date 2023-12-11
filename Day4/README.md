@@ -182,5 +182,6 @@ For navigate to jenkins Dashboard
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/5bdc97b0-eb92-4c1d-9301-3fdffb730c49)
 
 Click on "Create a Job"
-![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7c7afb1d-2241-40dc-8521-078b018dfa9e)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d9988609-5f45-49ab-9e2f-1e0ff6538292)
+
 
