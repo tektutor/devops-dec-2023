@@ -18,3 +18,11 @@
 - Microsoft Team Foundation Server (TFS)
 - Cloudbees ( Paid version for Commercial use )
 
+# Lab - Launching Jenkins CI/CD Build Server
+```
+cd ~/Downloads
+java -jar ./jenkins.war
+```
+
+Expected output
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e3fa7fa6-f884-4574-8846-b6ae06f8bcd4)
