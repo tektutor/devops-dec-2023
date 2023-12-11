@@ -242,3 +242,8 @@ Build Steps
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7445dc43-72d4-4507-a21d-ded6fd8be112)
 Select "Execute Shell"
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/319a83a8-a623-48bf-b724-0382e4faf34b)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f169d378-f033-4d76-bd5a-f2b45dd22447)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/6e6257d7-6041-47a1-a67a-dcbb7be23435)
+
+Click on Save button
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/0a7ef558-f970-494d-86e7-a471373b9396)
