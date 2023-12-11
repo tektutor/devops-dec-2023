@@ -202,4 +202,11 @@ Save
 
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/6b38e70d-7365-43c7-baa3-b757ae2f5bb7)
 
+Build History ( within 2 minutes it will automatically start the build )
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/22fca429-c8b7-46b0-9ab1-a4e87a3808bc)
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/592cd06a-e397-415e-9884-2067c7883b8a)
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/cf86de63-83cb-4d26-a381-862cdd433b72)
+
 
