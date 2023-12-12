@@ -1,6 +1,6 @@
 # Day 5
 
-## Lab - Creating DevOps Pipeline multiple stages
+## Lab - Creating DevOps Pipeline with multiple stages
 
 In this lab exercises, we would be 3 FreeStyle Jobs manually and then we will configure it in a way it runs one after the other as a DevOps Pipeline.
 
