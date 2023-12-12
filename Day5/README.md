@@ -46,5 +46,15 @@ Save the FreeStyle Job
 Let's create the First FreeStyle Job as shown below
 
 General Section
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7623479e-d680-4957-9fca-826e7560169d)
 
+Source Code Management
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/17bd5c9c-d383-46c7-8743-a336b77398dd)
 
+Build Triggers
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/4dc93fa9-d827-4ce1-814e-91a06f4b08b2)
+
+Build Steps
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/881cb730-496d-4201-9b74-ca189de1d0ef)
+
+Save the above FreeStyle Job.
