@@ -517,3 +517,9 @@ exit
 
 For official documentation about liquibase, you may check here
 https://docs.liquibase.com/faq.html
+
+# Kindly share your training feedback here
+https://survey.zohopublic.com/zs/uB0uUy
+
+# Kindly complete your Post test from RPS Lab machine
+https://app.mymapit.in/code4/tiny/EFSOp7
