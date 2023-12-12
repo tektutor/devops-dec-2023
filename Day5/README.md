@@ -116,7 +116,7 @@ docker run -d --name mysql --hostname mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=
 ```
 Expected output
 <pre>
-jegan@tektutor:~/devops-june-2023/Day5/datical/db-ci$ docker run -d --name mysql --hostname mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root@123 mysql:latest
+jegan@tektutor.org: docker run -d --name mysql --hostname mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root@123 mysql:latest
 2d1d256a3e00104d7410d8f13ff09c8261307fdda6bf3961d18dc64a9e3565b6
 </pre>
 
@@ -128,7 +128,7 @@ docker ps
 
 Expected output
 <pre>
-jegan@tektutor:~/devops-june-2023/Day5/datical/db-ci$ docker ps
+jegan@tektutor.org: docker ps
 CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                                                  NAMES
 2d1d256a3e00   mysql:latest   "docker-entrypoint.s…"   2 minutes ago   Up 2 minutes   0.0.0.0:3306->3306/tcp, :::3306->3306/tcp, 33060/tcp   mysql
 </pre>
@@ -143,7 +143,7 @@ SHOW DATABASE;
 ```
 Expected output
 <pre>
-jegan@tektutor:~/devops-june-2023/Day5/datical/db-ci$ docker exec -it mysql bash
+jegan@tektutor.org: docker exec -it mysql bash
 bash-4.4# mysql -u root -p
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -182,7 +182,7 @@ exit
 Let's check the datical liquibase now
 
 ```
-cd ~/devops-nov-2023
+cd ~/devops-dec-2023
 git pull
 
 cd Day5/datical/db-ci
@@ -191,7 +191,7 @@ cat liquibase.properties
 
 The liquibase.properties file has the mysql connection details and it looks as shown below
 <pre>
-jegan@tektutor:~/devops-nov-2023/Day5/datical/db-ci$ <b>cat liquibase.properties</b>
+jegan@tektutor.org:$ <b>cat liquibase.properties</b>
 changeLogFile: dbchangelog.xml
 url: jdbc:mysql://localhost:3306/tektutor
 username: root
@@ -227,13 +227,13 @@ Any schema changes that we wish to perform, we need to do only via the dbchangel
 
 In order to apply the table schema changes, you may run the below command
 ```
-cd ~/devops-nov-2023/Day5/datical/db-ci
+cd ~/devops-dec-2023/Day5/datical/db-ci
 
 mvn liquibase:update
 ```
 Expected output
 <pre>
-jegan@tektutor:~/devops-nov-2023/Day5/datical/db-ci$ mvn liquibase:update
+jegan@tektutor.org:~/devops-dec-2023/Day5/datical/db-ci$ mvn liquibase:update
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] -------------------< org.tektutor:tektutor-java-app >-------------------
@@ -309,7 +309,7 @@ The pom.xml file points to the liquibase.properites and the liquibase.properites
 
 You may now verify, if the changes are done in your mysql server
 <pre>
-jegan@tektutor:~/devops-nov-2023/Day5/datical/db-ci$ docker exec -it mysql bash
+jegan@tektutor:~/devops-dec-2023/Day5/datical/db-ci$ docker exec -it mysql bash
 bash-4.4# mysql -u root -p
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -390,13 +390,13 @@ Assuming, you wish to add 2 more columns to the training table on tektutor datab
 
 You may now update the liquibase as shown below
 ```
-cd ~/devops-nov-2023/Day5/datical/db-ci
+cd ~/devops-dec-2023/Day5/datical/db-ci
 mvn liquibase:update
 ```
 
 Expected output
 <pre>
-jegan@tektutor:~/devops-nov-2023/Day5/datical/db-ci$ mvn liquibase:update
+jegan@tektutor:~/devops-dec-2023/Day5/datical/db-ci$ mvn liquibase:update
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] -------------------< org.tektutor:tektutor-java-app >-------------------
@@ -467,7 +467,7 @@ Liquibase: Update has been successful.
 
 You may now verify if the schema changes are applied
 <pre>
-jegan@tektutor:~/devops-nov-2023/Day5/datical/db-ci$ docker exec -it mysql bash
+jegan@tektutor:~/devops-dec-2023/Day5/datical/db-ci$ docker exec -it mysql bash
 bash-4.4# mysql -u root -p
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
