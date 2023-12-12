@@ -90,7 +90,7 @@ Your Dashboard would look like this now
 Head over to Jenkins Dashboard
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1022d501-61bd-4ce9-ae5d-1f9d82efea64)
 
-Click on "New Item"
+Click on "New Item" and Select "Pipeline"
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c53a144a-e694-4adc-aba5-034ccba9d532)
 
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d63e0c31-d13b-4114-a012-9de158986456)
