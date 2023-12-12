@@ -55,5 +55,14 @@ pipeline {
            }
 	}
      }
+
+     stage ( "Stage 7 - download application jar from JFrog Artifactory server" ) {
+	agent { label "built-in" }
+	steps {
+	   dir("Day5/devops-pipeline/ansible") {
+		sh "ansible-playbook download-artifacts-from-jfrog-artifactory-using-playbook.yml"
+           }
+	}
+     }
   }
 }
