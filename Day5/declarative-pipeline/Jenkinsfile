@@ -1,0 +1,59 @@
+pipeline {
+  agent none
+
+  stages {
+     stage ( "Stage 1 - Build Custom Docker Image" ) {
+	agent { label 'built-in' }
+	steps {
+	   dir("Day5/devops-pipeline/CustomDockerImage") {
+		sh "docker build -t tektutor/maven:latest ."
+           }
+	}
+     }
+
+     stage ( "Stage 2 - compile" ) {
+	agent { label 'docker-slave' }
+	steps {
+	   dir("Day5/declarative-pipeline/multi-module-project") {
+		sh "mvn compile"
+           }
+	}
+     }
+
+     stage ( "Stage 3 - test" ) {
+	agent { label 'docker-slave' }
+	steps {
+	   dir("Day5/declarative-pipeline/multi-module-project") {
+		sh "mvn test"
+           }
+	}
+     }
+
+     stage ( "Stage 4 - package" ) {
+	agent { label 'docker-slave' }
+	steps {
+	   dir("Day5/declarative-pipeline/multi-module-project") {
+		sh "mvn package"
+           }
+	}
+     }
+
+     stage ( "Stage 5 - install" ) {
+	agent { label "docker-slave" }
+	steps {
+	   dir("Day5/declarative-pipeline/multi-module-project") {
+		sh "mvn install"
+           }
+	}
+     }
+
+     stage ( "Stage 6 - deploy" ) {
+	agent { label "docker-slave" }
+	steps {
+	   dir("Day5/declarative-pipeline/multi-module-project") {
+		sh "mvn deploy"
+           }
+	}
+     }
+  }
+}
