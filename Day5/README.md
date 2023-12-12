@@ -64,5 +64,20 @@ Save the above FreeStyle Job.
 At this point, your Jenkins Dashboard will have all the 3 FreeStyle jobs we created today as shown below
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e5dfbba6-3c6f-4df0-b569-4ad933003540)
 
-Click on the "+" symbol
+Click on the "+" symbol and then click on "New view"
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f0d047a0-4aa4-4084-b99b-86838d4f7649)
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/34f06c96-298e-4592-ad6c-f2d2d617c1ef)
+Click on "Create" button
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/acae8932-953c-4532-8206-cbae0c60a4d2)
+
+Under Pipeline Flow --> Upstream / downstream config --> Select Initial Job, you need to select "BuildDockerImage" as the first job in the pipeline.
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/07ef74a3-627a-4092-9779-218c485a395e)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1395bd74-08ab-4ea0-80a7-0f50984c0613)
+
+Under Display Options --> No. of Displayed Buils, you may choose 10 or whatever number of build history your prefer.
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3aa5fda7-1bd3-4e29-ba69-4a5b7acf71d1)
+
+Click on "Ok" to save the configurations.
+
