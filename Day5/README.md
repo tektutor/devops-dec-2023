@@ -85,3 +85,22 @@ Click on "Ok" to save the configurations.
 Your Dashboard would look like this now
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/0f7f0ceb-e1b2-4897-9b7e-f10c94e9fe76)
 
+
+## Lab - Creating a DevOps Pipeline in declarative style using Jenkinsfile(groovy)
+Head over to Jenkins Dashboard
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/1022d501-61bd-4ce9-ae5d-1f9d82efea64)
+
+Click on "New Item"
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c53a144a-e694-4adc-aba5-034ccba9d532)
+
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/d63e0c31-d13b-4114-a012-9de158986456)
+Build Triggers
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/7bc30439-a1d8-4f35-97e1-75ad6db7f3a9)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/331b85e2-ee54-478c-b4b3-0a08c468fc68)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f0f39330-36df-404a-83c2-dedb7c822290)
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/4fb94da3-c750-42bc-a489-2516d902cb01)
+
+Make sure you saved the configurations.
+
+If everything went well, it will automatically trigger the pipeline and your would get an output similar to screenshot shown below
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/c9f5ae9a-75b9-4e3c-91d8-ac03c9f5d44d)
