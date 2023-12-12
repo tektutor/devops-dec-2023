@@ -2,7 +2,7 @@
 
 ## Lab - Creating DevOps Pipeline with multiple stages
 
-In this lab exercises, we would be 3 FreeStyle Jobs manually and then we will configure it in a way it runs one after the other as a DevOps Pipeline.
+In this lab exercises, we would be creating 3 FreeStyle Jobs manually and then we will configure it in a way it runs one after the other as a DevOps Pipeline.
 
 - First FreeStyle Job is BuildDockerImage ( Docker )
 - Second FreeStyle Job is BuildMavenJobInSlaveDockerContainer ( Maven Build within Docker Container )
