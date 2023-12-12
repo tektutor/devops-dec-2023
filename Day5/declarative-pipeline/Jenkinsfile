@@ -50,7 +50,7 @@ pipeline {
      stage ( "Stage 6 - deploy" ) {
 	agent { label "docker-slave" }
 	steps {
-	   dir("Day5/declarative-pipeline/multi-module-project") {
+	   dir("Day1/multi-module-project") {
 		sh "mvn deploy"
            }
 	}
