@@ -58,3 +58,11 @@ Build Steps
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/881cb730-496d-4201-9b74-ca189de1d0ef)
 
 Save the above FreeStyle Job.
+
+## Lab - Creating the DevOps - Build Pipeline View
+
+At this point, your Jenkins Dashboard will have all the 3 FreeStyle jobs we created today as shown below
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/e5dfbba6-3c6f-4df0-b569-4ad933003540)
+
+Click on the "+" symbol
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/f0d047a0-4aa4-4084-b99b-86838d4f7649)
