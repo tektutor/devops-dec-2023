@@ -128,7 +128,7 @@ docker ps
 
 Expected output
 <pre>
-jegan@tektutor.org: docker ps
+jegan@tektutor.org: <b>docker ps</b>
 CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS         PORTS                                                  NAMES
 2d1d256a3e00   mysql:latest   "docker-entrypoint.s…"   2 minutes ago   Up 2 minutes   0.0.0.0:3306->3306/tcp, :::3306->3306/tcp, 33060/tcp   mysql
 </pre>
@@ -143,7 +143,7 @@ SHOW DATABASE;
 ```
 Expected output
 <pre>
-jegan@tektutor.org: docker exec -it mysql bash
+jegan@tektutor.org: <b>docker exec -it mysql bash</b>
 bash-4.4# mysql -u root -p
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -158,10 +158,10 @@ owners.
 
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-mysql> CREATE DATABASE tektutor;
+mysql> <b>CREATE DATABASE tektutor;</b>
 Query OK, 1 row affected (0.01 sec)
 
-mysql> SHOW DATABASES;
+mysql> <b>SHOW DATABASES;</b>
 +--------------------+
 | Database           |
 +--------------------+
@@ -309,7 +309,7 @@ The pom.xml file points to the liquibase.properites and the liquibase.properites
 
 You may now verify, if the changes are done in your mysql server
 <pre>
-jegan@tektutor:~/devops-dec-2023/Day5/datical/db-ci$ docker exec -it mysql bash
+jegan@tektutor:~/devops-dec-2023/Day5/datical/db-ci$ <b>docker exec -it mysql bash</b>
 bash-4.4# mysql -u root -p
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -329,7 +329,7 @@ Reading table information for completion of table and column names
 You can turn off this feature to get a quicker startup with -A
 
 Database changed
-mysql> SHOW TABLES;
+mysql> <b>SHOW TABLES;</b>
 +-----------------------+
 | Tables_in_tektutor    |
 +-----------------------+
@@ -339,7 +339,7 @@ mysql> SHOW TABLES;
 +-----------------------+
 3 rows in set (0.01 sec)
 
-mysql> DESCRIBE training;
+mysql> <b>DESCRIBE training;</b>
 +----------+--------------+------+-----+---------+-------+
 | Field    | Type         | Null | Key | Default | Extra |
 +----------+--------------+------+-----+---------+-------+
