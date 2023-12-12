@@ -80,4 +80,8 @@ Under Display Options --> No. of Displayed Buils, you may choose 10 or whatever 
 ![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/3aa5fda7-1bd3-4e29-ba69-4a5b7acf71d1)
 
 Click on "Ok" to save the configurations.
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/9518049e-662a-4f18-bdcc-c17df79328ca)
+
+Your Dashboard would look like this now
+![image](https://github.com/tektutor/devops-dec-2023/assets/12674043/0f7f0ceb-e1b2-4897-9b7e-f10c94e9fe76)
 
