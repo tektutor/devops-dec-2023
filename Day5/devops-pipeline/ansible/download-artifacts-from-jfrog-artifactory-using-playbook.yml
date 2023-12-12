@@ -1,0 +1,9 @@
+- name: This playbook will download application jar file from JFrog Artifactory
+  hosts: localhost
+  tasks:
+  - name: Download jar from JFrog Artifactory server
+    get_url:
+      url: http://localhost:8082/artifactory/tektutor/org/tektutor/dal/1.0.0/dal-1.0.0.jar
+      dest: .
+      url_username: admin
+      url_password: Rps@12345
